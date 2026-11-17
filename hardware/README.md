@@ -9,12 +9,14 @@ Everything physical in Capricorn: the board, its fabrication package, its 3D mod
 ```text
 pcb/          KiCad 10 project of the board (schematic in four sheets, layout, project libraries)
 fab/          JLCPCB package: Gerbers, drill files, BOM.csv and CPL.csv
-board/        STEP model of the assembled board, with every part
+board/        STEP model of the assembled board, with every part, and a render
 enclosure/    Desk dock: build123d source, STEP and STL of each part, renders and print settings
 ordering/     How to check JLCPCB's placement preview, part by part, before paying
 ```
 
 ## Board (`pcb/`)
+
+![Render of the assembled board, top side](board/board.png)
 
 - 92 × 48 mm, 4 layers, 147 parts, all orderable from LCSC.
 - Open `pcb/esp32-audio-module.kicad_pro` with **KiCad 10**. Project-specific symbols and footprints are in `pcb/heypcb-libs/`; everything else comes from KiCad's standard libraries.
@@ -35,7 +37,7 @@ The exact files of our first order. Upload the Gerber files as a ZIP, then `BOM.
 
 ## Enclosure (`enclosure/`)
 
-A folding desk dock (194 × 138.5 mm) in seven printed parts, about 13.5 hours and 387 g of PETG. The source is parametric ([build123d](https://github.com/gumyr/build123d)) and checks itself: `dock.py` runs 635 fit checks against the board model in `board/`, and `printcheck.py` checks every printed layer for overhangs. Details, print settings, hardware list and assembly in [`enclosure/README.md`](enclosure/README.md) (in Spanish).
+A folding desk dock (194 × 138.5 mm) in seven printed parts, about 13.5 hours and 387 g of PETG. The source is parametric ([build123d](https://github.com/gumyr/build123d)) and checks itself: `dock.py` runs 635 fit checks against the board model in `board/`, and `printcheck.py` checks every printed layer for overhangs. Details, print settings, hardware list and assembly in [`enclosure/README.md`](enclosure/README.md).
 
 ## Firmware pin map
 

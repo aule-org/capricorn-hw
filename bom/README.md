@@ -30,7 +30,7 @@ Most of the assembly cost is fixed per order (feeder fees are charged per distin
 | Speaker, 28 mm, 8 Ω, 2 W | 2 | In parallel on J3 |
 | Silicone wire, AWG 30, 450 mm | 14 | 8 for the panel, 6 for the touch controller |
 | PETG filament | ~387 g | Seven printed parts, about 13.5 h on a 0.4 mm nozzle |
-| Screws, hinges, ballast, rubber feet, optional lens | — | Full list in [hardware/enclosure](../hardware/enclosure/README.md#ferretería) |
+| Screws, hinges, ballast, rubber feet, optional lens | — | Full list in [hardware/enclosure](../hardware/enclosure/README.md#hardware-list) |
 
 ## Board parts
 
@@ -48,7 +48,7 @@ Most of the assembly cost is fixed per order (feeder fees are charged per distin
 | LIS2DH12TR | 1 | U7 | `LGA-12_L2.0-W2.0-P0.50-BL` | [C110926](https://www.lcsc.com/product-detail/C110926.html) |
 | TPS63000 buck-boost 3.45V | 1 | U8 | `Texas_DRC0010J_ThermalVias` | [C24966](https://www.lcsc.com/product-detail/C24966.html) |
 | ES7210 4ch ADC | 1 | U9 | `QFN-32_L4.0-W4.0-P0.40-BL-EP2.7` | [C365743](https://www.lcsc.com/product-detail/C365743.html) |
-| MCP65R41-1202 corte térmico | 1 | U10 | `SOT-23-6` | [C219181](https://www.lcsc.com/product-detail/C219181.html) |
+| MCP65R41-1202 thermal cut-off | 1 | U10 | `SOT-23-6` | [C219181](https://www.lcsc.com/product-detail/C219181.html) |
 
 ### Microphones
 

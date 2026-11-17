@@ -17,7 +17,7 @@ Uso:  uv run --python 3.12 --with build123d python -I dock.py [out_dir]
       --sin-lente       sin el lente de policarbonato: el panel apoya en el bisel (cambian E y F)
       --colas-derecha   las colas del panel salen del otro extremo del borde (MEDIR en el panel real)
       --nombre=...      otro nombre en la placa N
-      --cortes          (con --with matplotlib) cortes.png
+      --cortes          (con --with matplotlib) sections.png
       --escena=DIR      deja en DIR las piezas armadas, para render.py
       --glb             capri-dock-v2.glb: abierta, una pieza por nodo, para un visor 3D
       --tiempos         cuánto tarda cada sección
@@ -1175,5 +1175,5 @@ if "--cortes" in sys.argv:
         ax.set_aspect("equal"); ax.autoscale_view(); ax.set_title(title, fontsize=9); ax.tick_params(labelsize=7)
         if lim:
             ax.set_xlim(lim[0], lim[1]); ax.set_ylim(lim[2], lim[3])
-    fig.savefig(OUT / "cortes.png", dpi=110); print("cortes.png")
+    fig.savefig(OUT / "sections.png", dpi=110); print("sections.png")
 

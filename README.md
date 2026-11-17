@@ -11,7 +11,7 @@
 (English | [Español](README.es.md))
 
 <p align="center">
-  <img src="hardware/enclosure/vista.png" alt="Capricorn on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
+  <img src="hardware/enclosure/view.png" alt="Capricorn on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
 </p>
 
 **Capricorn is the open-source AI tutor.** A calm, dedicated device for children: an e-ink page, a voice that listens, and a tutor that knows what the child already understands and what comes next. No feed, no ads, no glowing screen.
@@ -35,6 +35,10 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 
 ## The device
 
+<p align="center">
+  <img src="hardware/board/board.png" alt="Render of the Capricorn v0.2.2 board: ESP32-S3 module in the middle, e-ink and touch connectors on the left, USB-C and speaker connectors on the right" width="640">
+</p>
+
 | | Prototype v0.2.2 |
 |---|---|
 | Processor | ESP32-S3-WROOM-1 (16 MB flash, 8 MB PSRAM), Wi-Fi and Bluetooth LE |
@@ -51,7 +55,7 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 ## Inside
 
 <p align="center">
-  <img src="hardware/enclosure/explosionada.png" alt="Exploded view of the dock: frame, lens, panel, driver, base, board, battery, ballast and speakers" width="760">
+  <img src="hardware/enclosure/exploded.png" alt="Exploded view of the dock: frame, lens, panel, driver, base, board, battery, ballast and speakers" width="760">
 </p>
 
 ## Repository layout
