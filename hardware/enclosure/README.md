@@ -1,246 +1,246 @@
-# Capricorn: base de escritorio plegable (capri-dock v2)
+# Capricorn: folding desk dock (capri-dock v2)
 
-Es la segunda versión de la base de escritorio de Capricorn, adaptada a la placa táctil, hoy la **capri-slate v0.2.2 táctil** (misma geometría que la v0.2.1: solo cambian el valor de L2 y el texto de la serigrafía), y al panel **GDEY075T7-T01** (7.5", 800 × 480, táctil capacitivo GT911), y preparada para imprimir en PETG en la Elegoo Centauri Carbon.
-La forma es la misma (cuello en L, marco del mismo contorno que la base, bisagra escondida), **con el bisel más fino**: base y marco miden 194 × 138.5 mm (antes 200 × 140), 36 mm de alto. Lo que la v1 explica y no cambió (plegado, herrajes de las bisagras, a prueba de niños) sigue en su README.
+This is the second version of the Capricorn desk dock, adapted to the touch board, currently the **capri-slate v0.2.2 touch** (same geometry as v0.2.1: only the value of L2 and the silkscreen text change), and to the **GDEY075T7-T01** panel (7.5", 800 × 480, GT911 capacitive touch), and set up to print in PETG on the Elegoo Centauri Carbon.
+The shape is the same (L-shaped neck, frame with the same outline as the base, hidden hinge), **with a thinner bezel**: base and frame measure 194 × 138.5 mm (previously 200 × 140), 36 mm tall. What v1 explains and did not change (folding, hinge hardware, childproofing) is still in its README.
 
-**Estado (2026-11-12):** `dock.py` pasa sus 635 controles contra `../board/capri-slate-v0.2.2-tactil.step`, que es su placa por omisión (617 con `--sin-lente`, 635 con `--colas-derecha`). `printcheck.py` pasa en las tres. Las 7 piezas y las 2 alternativas sin lente están laminadas.
-**STEP de la v0.2.2:** [`../board/capri-slate-v0.2.2-tactil.step`](../board/capri-slate-v0.2.2-tactil.step) es la placa armada con los modelos 3D de todas las piezas: 129 sólidos. Contra él pasan los 635 controles.
-**No está validada con el panel real:** las posiciones de las colas, los adaptadores y el driver son supuestos marcados MEDIR.
+**Status (2026-11-12):** `dock.py` passes its 635 checks against `../board/capri-slate-v0.2.2-tactil.step`, which is its default board (617 with `--sin-lente` (no lens), 635 with `--colas-derecha` (flex tails on the right)). `printcheck.py` passes on all three. The 7 parts and the 2 no-lens alternatives are sliced.
+**v0.2.2 STEP:** [`../board/capri-slate-v0.2.2-tactil.step`](../board/capri-slate-v0.2.2-tactil.step) is the assembled board with the 3D models of all its components: 129 solids. The 635 checks pass against it.
+**It is not validated with the real panel:** the positions of the flex tails, the adapters and the driver are assumptions marked MEDIR (to be measured).
 
-## Qué se puede imprimir ya y qué espera
+## What can be printed now and what has to wait
 
-| Pieza | ¿Ya? | De qué depende |
+| Part | Now? | What it depends on |
 |---|---|---|
-| `H-tecla-hablar`, `N-placa-nombre` | **Sí** | Nada del panel. H sirve para probar el clic de SW1 con la placa en la mano (7 minutos) |
-| `C-cuello` | **Sí** | Solo del niple M10 × 1 (rosca en Ø9, paso interior de 6.5 mm o más) y del hilo AWG 30 |
-| `B-fondo` | **Sí** | De la batería 805080 y de las platinas, que ahora se cortan de **57 mm** |
-| `A-base` | **Sí, con un riesgo** | No depende del panel. Sí del interruptor SS12D00G6 real (palanca y alto, hoy una caja en el STEP) y de los parlantes de 28 mm. Es la cama larga (5 h 26 min): conviene medir el interruptor antes |
-| `E-marco`, `F-tapa-marco` | **No: esperan al panel** | De dónde salen las dos colas, del driver, del adaptador del táctil y de si va con lente. Imprimirlas antes es apostar a los supuestos de la tabla de abajo |
+| `H-tecla-hablar` (talk key), `N-placa-nombre` (name plate) | **Yes** | Nothing from the panel. H lets you test the SW1 click with the board in your hand (7 minutes) |
+| `C-cuello` (neck) | **Yes** | Only on the M10 × 1 nipple (threads into Ø9, bore of 6.5 mm or more) and on the AWG 30 wire |
+| `B-fondo` (bottom cover) | **Yes** | On the 805080 battery and on the flat bars, which are now cut to **57 mm** |
+| `A-base` (base) | **Yes, with one risk** | It does not depend on the panel. It does depend on the real SS12D00G6 switch (lever and height, currently a box in the STEP) and on the 28 mm speakers. It is the long print (5 h 26 min): better to measure the switch first |
+| `E-marco` (frame), `F-tapa-marco` (frame cover) | **No: they wait for the panel** | On where the two flex tails come out, on the driver, on the touch adapter and on whether it is built with a lens. Printing them earlier is betting on the assumptions in the table below |
 
-## Bisel: antes y después
+## Bezel: before and after
 
-| | v1 y primera v2 | Ahora | Cambio |
+| | v1 and first v2 | Now | Change |
 |---|---|---|---|
-| Contorno de marco y base | 200 × 140 mm | **194 × 138.5 mm** | −6 y −1.5 |
-| Del borde del marco al panel, a los lados | 14.9 mm | **11.9 mm** | −3.0 por lado |
-| Arriba | 8.3 mm | **6.8 mm** | −1.5 |
-| Abajo (adentro va la bisagra H2) | 20.5 mm | 20.5 mm | igual |
-| Bisel a la vista, hasta el área activa: lados / arriba / abajo | 17.9 / 17.6 / 23.5 mm | **14.9 / 16.1 / 23.5 mm** | |
+| Frame and base outline | 200 × 140 mm | **194 × 138.5 mm** | −6 and −1.5 |
+| From the frame edge to the panel, at the sides | 14.9 mm | **11.9 mm** | −3.0 per side |
+| Top | 8.3 mm | **6.8 mm** | −1.5 |
+| Bottom (hinge H2 goes inside) | 20.5 mm | 20.5 mm | same |
+| Visible bezel, up to the active area: sides / top / bottom | 17.9 / 17.6 / 23.5 mm | **14.9 / 16.1 / 23.5 mm** | |
 
-Qué hubo que mover para que pasaran los controles (el intento anterior, solo angostar, rompía 10):
-- **Marco:** las 4 torres de tornillo y sus topes van 3.5 mm más hacia las esquinas, fuera del panel.
-- **Lastre:** platinas de 57 mm en vez de 60 (506 g en vez de 533), pegadas a la bahía de la batería: quedan a 16 mm de la antena.
-- **Batería:** contra la pared izquierda y 2 mm más adelante, para no pisar la torre de la esquina.
-- **Buje del pasador de H1:** 3.5 mm en vez de 5, con la cabeza del M4 embutida: queda a 0.6 mm del borde de la placa, con 2.8 mm de apoyo (antes 7.5).
-- **Cables:** recorridos atados a la pared derecha y a la punta del niple, no a coordenadas fijas.
-- **Estabilidad:** pesa ~1176 g; empujar el centro de la pantalla la vuelca con 4.6 N (antes 4.9; el mínimo es 3).
+What had to move for the checks to pass (the previous attempt, only narrowing, broke 10):
+- **Frame:** the 4 screw bosses and their bumpers go 3.5 mm further toward the corners, outside the panel.
+- **Ballast:** 57 mm flat bars instead of 60 (506 g instead of 533), up against the battery bay: they end up 16 mm from the antenna.
+- **Battery:** against the left wall and 2 mm further forward, so it does not overlap the corner boss.
+- **H1 pin bushing:** 3.5 mm instead of 5, with the M4 head recessed: it ends up 0.6 mm from the board edge, with 2.8 mm of bearing length (previously 7.5).
+- **Cables:** routes tied to the right wall and to the nipple tip, not to fixed coordinates.
+- **Stability:** it weighs ~1176 g; pushing on the center of the screen tips it over at 4.6 N (previously 4.9; the minimum is 3).
 
-**Por qué no más:** a los lados, la torre de Ø7 ya está entre la guía del panel y la pared del marco, y en la base el lastre ya se acortó para guardar los 15 mm de la antena. Arriba, el doblez de las colas usa 3.3 de los 4.4 mm que quedan. Abajo manda la bisagra.
+**Why not more:** at the sides, the Ø7 boss is already between the panel guide and the frame wall, and in the base the ballast was already shortened to keep the 15 mm for the antenna. At the top, the fold of the flex tails uses 3.3 of the 4.4 mm that are left. At the bottom the hinge sets the limit.
 
-![Explosionada](explosionada.png)
+![Exploded](exploded.png)
 
-![Controles](controles.png)
+![Controls](controls.png)
 
-![Cortes](cortes.png)
+![Section views](sections.png)
 
-![Armada](vista.png)
+![Assembled](view.png)
 
-## Qué cambió contra la v1
+## What changed from v1
 
-| Tema | v1 | v2 |
+| Topic | v1 | v2 |
 |---|---|---|
-| **Botones de navegación** | Peine G con 3 palancas sobre SW3, SW4 y SW5 | **No están en la placa: salió todo.** Sin pieza G, sin sus 3 agujeros, sin postes de remache, sin empujadores ni láminas. La tapa queda cerrada ahí |
-| **Tecla ● (H)** | Sobre SW4, empujada por el peine | **Sobre SW1**, el único pulsador que queda. Es un émbolo macizo de Ø16 con guía, tope de arriba y tope de abajo. La tapa chica de SW1 (pieza D) ya no existe |
-| **Ranuras de SW6 y SW2** | Centradas en el origen de la huella, que es el **pad 1**: quedaban a 2.5 mm del centro de la palanca | Centradas en el cuerpo real del interruptor, leído del STEP. La de SW6 lleva un chaflán de 45° para la yema del dedo |
-| **Panel** | 1.18 mm, una cola al centro | 2.13 mm, dos colas hacia un extremo del borde. Las guías de E son 0.95 mm más hondas y las costillas de F más cortas; el marco mide lo mismo |
-| **Lente** | Fijo | Un parámetro: `--sin-lente` (por omisión, con lente) |
-| **Driver del panel** | Acostado y centrado | **De pie**, bajo la cola de 24 pines, con el adaptador del táctil al lado |
-| **Cables por las bisagras** | 8 hilos, canal de Ø6 | **14 hilos** (8 del panel + 6 del táctil), canal de Ø7 |
-| **Táctil en la base** | No había | Adaptador de 6 pines en el piso y cinta corta que sale de J6 y da la vuelta junto a la pared derecha |
-| **Impresión** | "Sin soportes", pero no salía así (ver abajo) | Controlada capa por capa. Solo A lleva soporte, en un lugar |
-| **Bisel** | Marco y base de 200 × 140 | 194 × 138.5: 3 mm menos por lado y 1.5 arriba (ver arriba) |
-| **STL** | En su lugar | **En la orientación de impresión** (la cama en z = 0). Los STEP siguen en su lugar |
+| **Navigation buttons** | Comb G with 3 levers over SW3, SW4 and SW5 | **They are not on the board: all of it is gone.** No part G, none of its 3 holes, no rivet posts, no pushers and no flexures. The cover is closed there |
+| **● key (H)** | Over SW4, pushed by the comb | **Over SW1**, the only push button left. It is a solid Ø16 plunger with a guide, an upper stop and a lower stop. The small SW1 cover (part D) no longer exists |
+| **SW6 and SW2 slots** | Centered on the footprint origin, which is **pad 1**: they ended up 2.5 mm from the center of the lever | Centered on the real switch body, read from the STEP. The SW6 slot has a 45° chamfer for the fingertip |
+| **Panel** | 1.18 mm, one flex tail at the center | 2.13 mm, two flex tails toward one end of the edge. The guides in E are 0.95 mm deeper and the ribs in F are shorter; the frame measures the same |
+| **Lens** | Fixed | A parameter: `--sin-lente` (default is with lens) |
+| **Panel driver** | Lying flat and centered | **Standing upright**, under the 24-pin flex tail, with the touch adapter next to it |
+| **Cables through the hinges** | 8 wires, Ø6 channel | **14 wires** (8 for the panel + 6 for touch), Ø7 channel |
+| **Touch in the base** | There was none | 6-pin adapter on the floor and a short ribbon that leaves J6 and turns back next to the right wall |
+| **Printing** | "No supports", but it did not print that way (see below) | Checked layer by layer. Only A takes support, in one place |
+| **Bezel** | Frame and base of 200 × 140 | 194 × 138.5: 3 mm less per side and 1.5 at the top (see above) |
+| **STL** | In assembly position | **In print orientation** (the bed at z = 0). The STEP files are still in assembly position |
 
-`--vista` no se portó: lo reemplaza `render.py`. El modelo para el visor 3D sí: ver [Visor 3D](#visor-3d).
+`--vista` (view) was not ported: `render.py` replaces it. The model for the 3D viewer was: see [3D viewer](#3d-viewer).
 
-### La tecla ● sobre SW1
+### The ● key over SW1
 
-- **No puede ir centrada en SW1:** a 5.7 mm está el LED D1 y a 6.3 mm la ranura de SW2. Va corrida 4.3 mm (hacia el frente y hacia el USB) y aprieta el pulsador con su cara de abajo. Quedan 0.78 mm de tapa hasta el agujero de D1 y 1.4 mm hasta la ranura de SW2.
-- **Guía:** el agujero de la tapa más un collar por debajo, 4.5 mm en total, con 0.2 mm de holgura por lado.
-- **Tope de arriba:** dos orejas a 45° que asientan en la tapa. También impiden que gire y que la arranquen. Entra por abajo, antes que la placa.
-- **Tope de abajo:** dos pies de Ø2.2 que apoyan en placa libre 0.5 mm después de tocar SW1 (`TALK_STOP`). Con SW1 forman un trípode: la tecla no se hunde ni se ladea más. **No descargan el pulsador:** el TL3305 hace fondo a los 0.25 mm; un tope más corto arriesga que no llegue a cerrar.
-- **Queda detrás de la pantalla abierta.** SW1 está al fondo a la derecha de la base (a 103 mm del frente); el marco abierto arranca a 60 mm. Se alcanza por el costado. Traerla al frente pide mover el pulsador en la placa.
+- **It cannot be centered on SW1:** LED D1 is 5.7 mm away and the SW2 slot is 6.3 mm away. It is offset 4.3 mm (toward the front and toward the USB) and presses the push button with its bottom face. That leaves 0.78 mm of cover up to the D1 hole and 1.4 mm up to the SW2 slot.
+- **Guide:** the hole in the cover plus a collar underneath, 4.5 mm in total, with 0.2 mm of clearance per side.
+- **Upper stop:** two 45° ears that seat against the cover. They also keep it from rotating and from being pulled out. It goes in from below, before the board.
+- **Lower stop:** two Ø2.2 feet that land on bare board 0.5 mm after touching SW1 (`TALK_STOP`). Together with SW1 they form a tripod: the key does not sink or tilt any further. **They do not take load off the push button:** the TL3305 bottoms out at 0.25 mm; a shorter stop risks it not closing.
+- **It ends up behind the open screen.** SW1 is at the back right of the base (103 mm from the front); the open frame starts at 60 mm. You reach it from the side. Bringing it to the front means moving the push button on the board.
 
-### Lo que la v1 no podía imprimir sin soportes
+### What v1 could not print without supports
 
-`printcheck.py` lo encontró en las piezas de la v1 que la v2 heredaba; todo quedó corregido salvo el primero:
+`printcheck.py` found it in the v1 parts that v2 inherited; everything was fixed except the first one:
 
-| Dónde | Problema | Qué se hizo |
+| Where | Problem | What was done |
 |---|---|---|
-| A, piso del bolsillo del cuello | Techo de 62 × 75 mm a 17.5 mm de la cama | **Lleva soporte**, solo ahí, desde la cama. Sale en un bloque |
-| A, hueco del pulgar | Elipsoide: su techo quedaba en voladizo | Paredes a 45° |
-| A, aros de los parlantes | El aro cerraba en el aire | Bloque con media caña y dos arcos hasta 45° |
-| A, buje del pasador de H1 | Nacía en el aire | Unido a la tapa |
-| A, rebaje de la placa del nombre | Canto de 1.2 mm en voladizo | Canto a 45°; la placa N lleva el mismo bisel |
-| A y E, redondeo que va sobre la cama | La mitad de abajo pasa de 45° | Faceta de 45° tangente al redondeo (0.9 mm en A, 0.45 mm en E) |
-| C, ranuras de las tuercas M4 | El paso del pasador partía su techo | Piel de 0.2 mm que el tornillo perfora, y un rebaje en la boca de la de H1 |
-| B y E, cajuelas de patas y topes | Techo en anillo alrededor del avellanado | Piel de 0.2 mm que el tornillo perfora |
-| H, ala de la tecla | Anillo en voladizo | Orejas a 45° |
+| A, floor of the neck pocket | Ceiling of 62 × 75 mm at 17.5 mm from the bed | **It takes support**, only there, from the bed. It comes out in one block |
+| A, thumb recess | Ellipsoid: its ceiling was an overhang | Walls at 45° |
+| A, speaker rings | The ring closed in mid-air | Block with a half-round groove and two arcs up to 45° |
+| A, H1 pin bushing | It started in mid-air | Joined to the cover |
+| A, name plate recess | 1.2 mm edge as an overhang | Edge at 45°; plate N has the same bevel |
+| A and E, fillet that sits on the bed | The lower half exceeds 45° | 45° facet tangent to the fillet (0.9 mm in A, 0.45 mm in E) |
+| C, M4 nut slots | The pin hole split their ceiling | 0.2 mm skin that the screw pierces, and a relief at the mouth of the H1 slot |
+| B and E, recesses for feet and bumpers | Ring-shaped ceiling around the countersink | 0.2 mm skin that the screw pierces |
+| H, key flange | Ring as an overhang | Ears at 45° |
 
-## Piezas
+## Parts
 
-| Archivo | Qué es | Cómo se imprime | Tiempo | PETG |
+| File | What it is | How it prints | Time | PETG |
 |---|---|---|---|---|
-| `A-base.stl` | Tapa y paredes de la base: bolsillo del cuello, agujero y collar de la tecla, ranuras de SW6 y SW2, guías de luz, tubos de micrófono, apoyos de la placa, túnel USB, parlantes | Tapa sobre la cama. **Con soporte solo en el bolsillo** | 5 h 26 min | 158.7 g |
-| `B-fondo.stl` | Fondo: bolsillos del lastre, bahía de la batería, pernos de la placa | Plano, la cara de afuera sobre la cama | 2 h 28 min | 70.0 g |
-| `C-cuello.stl` | Cuello en L, con el canal de Ø7 | De costado, la cara izquierda sobre la cama. **5 perímetros** | 1 h 34 min | 44.5 g |
-| `E-marco.stl` | Marco: bisel, guías del panel, bloques de H2 | Cara del frente sobre la cama | 1 h 46 min | 50.0 g |
-| `F-tapa-marco.stl` | Tapa del marco, con las costillas del panel | Cara de atrás sobre la cama | 2 h 04 min | 61.8 g |
-| `H-tecla-hablar.stl` | Tecla ● | Cara de arriba sobre la cama | 7 min | 1.0 g |
-| `N-placa-nombre.stl` | Placa del nombre (`--nombre=…`) | Boca arriba; pausa a 1.2 mm para pasar de blanco a negro | 4 min | 1.3 g |
-| | **Total (con lente)** | | **13 h 29 min** | **387 g** |
-| `sin-lente/E-marco.stl` | Alternativa a E para armar sin lente | Igual que E | 1 h 45 min | 49.5 g |
-| `sin-lente/F-tapa-marco.stl` | Alternativa a F para armar sin lente | Igual que F | 2 h 05 min | 62.5 g |
+| `A-base.stl` | Cover and walls of the base: neck pocket, key hole and collar, SW6 and SW2 slots, light guides, microphone tubes, board rests, USB tunnel, speakers | Cover on the bed. **With support only in the pocket** | 5 h 26 min | 158.7 g |
+| `B-fondo.stl` | Bottom cover: ballast pockets, battery bay, board studs | Flat, outside face on the bed | 2 h 28 min | 70.0 g |
+| `C-cuello.stl` | L-shaped neck, with the Ø7 channel | On its side, left face on the bed. **5 perimeters** | 1 h 34 min | 44.5 g |
+| `E-marco.stl` | Frame: bezel, panel guides, H2 blocks | Front face on the bed | 1 h 46 min | 50.0 g |
+| `F-tapa-marco.stl` | Frame cover, with the panel ribs | Back face on the bed | 2 h 04 min | 61.8 g |
+| `H-tecla-hablar.stl` | ● key | Top face on the bed | 7 min | 1.0 g |
+| `N-placa-nombre.stl` | Name plate (`--nombre=…`) | Face up; pause at 1.2 mm to switch from white to black | 4 min | 1.3 g |
+| | **Total (with lens)** | | **13 h 29 min** | **387 g** |
+| `sin-lente/E-marco.stl` | Alternative to E for a build without lens | Same as E | 1 h 45 min | 49.5 g |
+| `sin-lente/F-tapa-marco.stl` | Alternative to F for a build without lens | Same as F | 2 h 05 min | 62.5 g |
 
-Colores: A, B y C en negro (273 g); E y F en el color del marco (112 g); H y N en blanco.
-Sin lente se cambian E y F por las de `sin-lente/` (las demás piezas no cambian): el total queda igual, 13 h 29 min y 387 g.
+Colors: A, B and C in black (273 g); E and F in the frame color (112 g); H and N in white.
+Without lens, swap E and F for the ones in `sin-lente/` (the other parts do not change): the total stays the same, 13 h 29 min and 387 g.
 
-**Laminado:** ElegooSlicer, Centauri Carbon, boquilla 0.4, PEI texturada. PETG a 250 °C, cama a 70 °C, ventilador de pieza con tope en 25 %, capa de 0.2 mm, 3 perímetros, 20 % de giroide. Los gcode no se versionan: `laminar.py` los genera con estos ajustes.
+**Slicing:** ElegooSlicer, Centauri Carbon, 0.4 nozzle, textured PEI. PETG at 250 °C, bed at 70 °C, part cooling fan capped at 25 %, 0.2 mm layer, 3 perimeters, 20 % gyroid. The gcode files are not versioned: `laminar.py` generates them with these settings.
 
-### Reglas de impresión y cómo se cumplen
+### Printing rules and how they are met
 
-| Regla | Resultado |
+| Rule | Result |
 |---|---|
-| Cama de 256 mm | La pieza más grande mide 194 × 138.5 mm |
-| Paredes de 1.2 mm o más | Base 2.4 / 2.0 / 3.0; marco 2.4 / 2.0 / 2.5; costillas, guías, collar y tubos 1.2. **Excepciones:** la guía de luz de D1 baja a 0.45 mm en sus 2.5 mm de abajo, donde pasa entre SW1 y SW2; la rejilla de los parlantes tiene nervios de ~1 mm; bajo el chaflán de SW6 quedan 0.8 mm de tapa |
-| Sin voladizos de más de 45° | `printcheck.py`: ningún voladizo ni isla. Quedan escalones de menos de una línea (0.5 mm) en hasta 5 capas seguidas: el techo de los agujeros redondos horizontales (paso de los niples Ø10.3, canal Ø7) |
-| Puentes de 20 mm o menos | El más largo mide 13.0 mm (techo del túnel USB) |
-| Láminas flexibles para PETG | **No queda ninguna.** La única de la v1 era la del peine de teclas |
-| Holgura de 0.15 a 0.2 mm por lado | 0.15 en B dentro de A, F dentro de E y la placa N; 0.2 en la tecla; 0.15 en los pasos de los niples |
+| 256 mm bed | The largest part measures 194 × 138.5 mm |
+| Walls of 1.2 mm or more | Base 2.4 / 2.0 / 3.0; frame 2.4 / 2.0 / 2.5; ribs, guides, collar and tubes 1.2. **Exceptions:** the D1 light guide drops to 0.45 mm in its bottom 2.5 mm, where it passes between SW1 and SW2; the speaker grille has bars of ~1 mm; under the SW6 chamfer 0.8 mm of cover is left |
+| No overhangs over 45° | `printcheck.py`: no overhangs and no islands. Steps of less than one line (0.5 mm) remain in up to 5 consecutive layers: the ceiling of the horizontal round holes (nipple clearance holes Ø10.3, Ø7 channel) |
+| Bridges of 20 mm or less | The longest measures 13.0 mm (ceiling of the USB tunnel) |
+| Flexures for PETG | **None are left.** The only one in v1 was the key comb's |
+| Clearance of 0.15 to 0.2 mm per side | 0.15 for B inside A, F inside E and plate N; 0.2 on the key; 0.15 on the nipple clearance holes |
 
-## Táctil y cableado
+## Touch and wiring
 
-`dock.py` modela cada cable como un tubo por su recorrido y controla que no pise ninguna pieza.
+`dock.py` models each cable as a tube along its route and checks that it does not intersect any part.
 
-| Cable | De | A | Largo del modelo |
+| Cable | From | To | Model length |
 |---|---|---|---|
-| Cola de 24 pines | borde de arriba del panel, por atrás | driver, doblada sobre el borde | 11 mm |
-| Cola táctil de 6 pines | borde de arriba del panel, por el frente | adaptador del marco, doblada sobre el borde | 13 mm |
-| 8 hilos del panel | driver (por abajo) | unión, en el marco | 27 mm |
-| 6 hilos del táctil | adaptador del marco | unión, en el marco | 67 mm |
-| Haz de 14, marco | unión | niple de H2 | 45 mm |
-| Haz de 14, cuello | niple de H2 | niple de H1, por el canal | 130 mm |
-| Haz de 14, base | niple de H1 | unión, sobre el lastre | 124 mm |
-| 8 hilos del panel | unión | adaptador de J5 | 25 mm |
-| 6 hilos del táctil | unión | adaptador de J6 | 41 mm |
-| Cinta corta de J5 | J5 | su adaptador, por el borde de adelante de la placa | 30 mm |
-| Cinta corta de J6 | J6 | su adaptador, dando la vuelta junto a la pared derecha | 31 mm |
+| 24-pin flex tail | top edge of the panel, at the back | driver, folded over the edge | 11 mm |
+| 6-pin touch flex tail | top edge of the panel, at the front | frame adapter, folded over the edge | 13 mm |
+| 8 panel wires | driver (from below) | junction, in the frame | 27 mm |
+| 6 touch wires | frame adapter | junction, in the frame | 67 mm |
+| Bundle of 14, frame | junction | H2 nipple | 45 mm |
+| Bundle of 14, neck | H2 nipple | H1 nipple, through the channel | 130 mm |
+| Bundle of 14, base | H1 nipple | junction, over the ballast | 124 mm |
+| 8 panel wires | junction | J5 adapter | 25 mm |
+| 6 touch wires | junction | J6 adapter | 41 mm |
+| Short J5 ribbon | J5 | its adapter, along the front edge of the board | 30 mm |
+| Short J6 ribbon | J6 | its adapter, turning back next to the right wall | 31 mm |
 
-- **Los 8 hilos del panel miden 351 mm y los 6 del táctil 407 mm.** Cortar los 14 de 450 mm.
-- **Hilo supuesto:** silicona AWG 30, Ø0.8 mm con aislante. Los 14 hacen un haz de Ø3.5: ocupan el 18 % del canal del cuello (Ø7) y el 21 % del niple (Ø6.5 supuesto). **Con AWG 28 (Ø1.2) no pasan.**
-- **Pines del táctil:** 1 GND, 2 3V3, 3 RESET, 4 INT, 5 SDA, 6 SCL, uno a uno entre los dos adaptadores.
-- **J6 abre hacia la pared derecha.** La cinta tiene 5 mm para dar la vuelta con radio 2.5 y baja al adaptador, en el piso bajo el borde de la placa. El cable de los parlantes se corrió contra la pared para dejarle lugar.
-- **Lente y táctil:** con lente, entre el policarbonato y el panel queda la junta de 0.5 mm, o sea aire sobre el área activa. Eso es lo peor para un táctil capacitivo. Hay que probarlo antes de decidir; `--sin-lente` es la salida.
+- **The 8 panel wires measure 351 mm and the 6 touch wires 407 mm.** Cut all 14 to 450 mm.
+- **Assumed wire:** AWG 30 silicone, Ø0.8 mm with insulation. The 14 make a Ø3.5 bundle: they take up 18 % of the neck channel (Ø7) and 21 % of the nipple (Ø6.5 assumed). **With AWG 28 (Ø1.2) they do not fit.**
+- **Touch pins:** 1 GND, 2 3V3, 3 RESET, 4 INT, 5 SDA, 6 SCL, one to one between the two adapters.
+- **J6 opens toward the right wall.** The ribbon has 5 mm to turn back with a 2.5 radius and goes down to the adapter, on the floor under the board edge. The speaker cable was moved against the wall to make room for it.
+- **Lens and touch:** with a lens, the 0.5 mm gasket sits between the polycarbonate and the panel, which means air over the active area. That is the worst case for capacitive touch. It has to be tested before deciding; `--sin-lente` is the way out.
 
-## Ferretería
+## Hardware list
 
-- **Bisagras:**
-  - 2 niples de lámpara M10 × 1 de ~30 mm, con tuerca moleteada fina de Ø14 y arandela de presión; paso interior de 6.5 mm o más;
-  - 1 tornillo M4 × 25 de nylon con tuerca de nylon (H1), de cabeza cilíndrica o alomada de Ø8 o menos y 3 mm de alto (va embutida en su buje), y 1 de acero con tuerca y arandela de presión (H2);
-  - 4 arandelas de PTFE de 1 mm (M10 y M4).
-- **Base:** 5 tornillos M3 × 10 autorroscantes para plástico, de cabeza avellanada, desde abajo.
-- **Marco:** 4 tornillos M3 × 12 autorroscantes avellanados, desde el frente, bajo los topes.
-- **Placa:** 1 tornillo M2 × 6 **de nylon** en H1, desde abajo.
+- **Hinges:**
+  - 2 M10 × 1 lamp nipples of ~30 mm, with a thin Ø14 knurled nut and a spring washer; bore of 6.5 mm or more;
+  - 1 nylon M4 × 25 screw with a nylon nut (H1), cheese head or pan head of Ø8 or less and 3 mm tall (it sits recessed in its bushing), and 1 steel one with nut and spring washer (H2);
+  - 4 PTFE washers of 1 mm (M10 and M4).
+- **Base:** 5 M3 × 10 self-tapping screws for plastic, countersunk head, from below.
+- **Frame:** 4 M3 × 12 countersunk self-tapping screws, from the front, under the bumpers.
+- **Board:** 1 M2 × 6 **nylon** screw at H1, from below.
 - **Panel:**
-  - Good Display GDEY075T7-T01 (7.5", con táctil GT911);
-  - driver Waveshare 13512, sin el conector de 40 pines, en el marco;
-  - adaptador FPC de 24 pines a 2.54 mm para J5;
-  - 2 adaptadores FPC de 6 pines, paso 0.5 mm, a pads para soldar, y 1 cinta FFC de 6 pines, paso 0.5 mm, de 50 mm, para J6.
-- **Cables:** 14 hilos de silicona AWG 30 de 450 mm (8 del panel y 6 del táctil); con AWG 28 no pasan por las bisagras. Silicona neutra para el alivio de tensión.
-- **Lastre:** 4 trozos de platina de acero de 1¾ × ¼ pulgada (44.5 × 6.35 mm) de **57 mm**, apilados de a dos y pegados con silicona.
-- **Batería:** LiPo 805080.
-- **Audio:** 2 parlantes de 28 mm, 8 Ω, 2 W, en paralelo a J3 (4 Ω, dentro de lo que acepta el PAM8302A).
-- **Goma:**
-  - 4 topes transparentes de Ø8 × 3.5 mm para el bisel, que entran 1 mm en su cajuela (**MEDIR** que haya esa medida; si no, ajustar `GAP_C` y `BUMP_REC`);
-  - 4 patas adhesivas de Ø12 × 3 mm, hundidas 1 mm sobre los tornillos de las esquinas.
-- **Lente (opcional):** policarbonato antirreflejo de 1 mm, 170.2 × 111.2 mm (corte láser), y junta de espuma de 0.5 mm alrededor del área activa. Sin lente, usar las piezas de `sin-lente/`.
-- **Espuma EVA de 1.5 mm:** una tira sobre el borde de atrás del panel y un rectángulo bajo la batería.
-- **Juntas:**
-  - 2 juntas de espuma de 0.5 mm, en anillo, para los parlantes;
-  - 2 anillos de Ø2.8 / Ø1.6 × 1.3 mm para sellar los micrófonos.
+  - Good Display GDEY075T7-T01 (7.5", with GT911 touch);
+  - Waveshare 13512 driver, without the 40-pin connector, in the frame;
+  - 24-pin FPC to 2.54 mm adapter for J5;
+  - 2 6-pin FPC adapters, 0.5 mm pitch, to solder pads, and 1 6-pin FFC ribbon, 0.5 mm pitch, 50 mm long, for J6.
+- **Cables:** 14 AWG 30 silicone wires of 450 mm (8 for the panel and 6 for touch); with AWG 28 they do not fit through the hinges. Neutral-cure silicone for strain relief.
+- **Ballast:** 4 pieces of 1¾ × ¼ inch (44.5 × 6.35 mm) steel flat bar, **57 mm** long, stacked in pairs and glued with silicone.
+- **Battery:** LiPo 805080.
+- **Audio:** 2 speakers of 28 mm, 8 Ω, 2 W, in parallel on J3 (4 Ω, within what the PAM8302A accepts).
+- **Rubber:**
+  - 4 clear bumpers of Ø8 × 3.5 mm for the bezel, which sit 1 mm into their recess (**MEDIR** that this size is available; if not, adjust `GAP_C` and `BUMP_REC`);
+  - 4 adhesive feet of Ø12 × 3 mm, sunk 1 mm over the corner screws.
+- **Lens (optional):** 1 mm anti-glare polycarbonate, 170.2 × 111.2 mm (laser cut), and a 0.5 mm foam gasket around the active area. Without lens, use the parts in `sin-lente/`.
+- **1.5 mm EVA foam:** a strip over the back edge of the panel and a rectangle under the battery.
+- **Gaskets:**
+  - 2 foam gaskets of 0.5 mm, ring-shaped, for the speakers;
+  - 2 rings of Ø2.8 / Ø1.6 × 1.3 mm to seal the microphones.
 
-## Armado
+## Assembly
 
 1. **Cables.**
-   1. Soldar 8 hilos al adaptador de J5 y 6 al adaptador de J6.
-   2. Juntarlos y pasarlos por el niple de H1, el canal del cuello (el agujero del codo ayuda) y el niple de H2.
-2. **Placa en A.**
-   1. Poner los anillos de los micrófonos.
-   2. Meter la tecla ● (H) desde adentro, con las orejas en sus ranuras.
-   3. Apoyar la placa con los componentes hacia la tapa: las palancas de SW6 y SW2 entran en sus ranuras.
-   4. Atornillar el M2 de nylon.
-   5. Enchufar la cinta de 24 pines en J5 y la de 6 en J6, y cada una en su adaptador.
-3. **H1, parlantes, fondo B y cierre de la base:** como en la v1.
-4. **Marco.**
-   1. Poner en E el lente y la junta (o solo la junta), y el panel boca abajo **con las colas hacia arriba**.
-   2. Pegar el driver detrás del panel, de pie bajo la cola de 24 pines, y el adaptador del táctil bajo la suya. Enchufar las dos colas.
-   3. Montar H2 como en la v1.
-   4. Soldar los 8 hilos al driver y los 6 al adaptador. El haz sube por la izquierda, por la muesca de la costilla de abajo de F.
-   5. Silicona en las puntas de los niples. Cerrar con F.
-5. **Goma y acabado:** como en la v1.
+   1. Solder 8 wires to the J5 adapter and 6 to the J6 adapter.
+   2. Bring them together and pass them through the H1 nipple, the neck channel (the hole at the elbow helps) and the H2 nipple.
+2. **Board into A.**
+   1. Fit the microphone rings.
+   2. Insert the ● key (H) from the inside, with the ears in their slots.
+   3. Seat the board with the components toward the cover: the SW6 and SW2 levers go into their slots.
+   4. Screw in the nylon M2.
+   5. Plug the 24-pin ribbon into J5 and the 6-pin one into J6, and each one into its adapter.
+3. **H1, speakers, bottom cover B and closing the base:** as in v1.
+4. **Frame.**
+   1. Place the lens and the gasket (or only the gasket) in E, and the panel face down **with the flex tails pointing up**.
+   2. Glue the driver behind the panel, standing upright under the 24-pin flex tail, and the touch adapter under its own. Plug in both flex tails.
+   3. Mount H2 as in v1.
+   4. Solder the 8 wires to the driver and the 6 to the adapter. The bundle goes up on the left, through the notch in the bottom rib of F.
+   5. Silicone on the nipple tips. Close with F.
+5. **Rubber and finishing:** as in v1.
 
-## Medir antes de imprimir
+## Measure before printing
 
-Todos están al inicio de `dock.py`.
+All of them are at the top of `dock.py`.
 
-| Parámetro | Valor | Qué medir |
+| Parameter | Value | What to measure |
 |---|---|---|
-| `TAIL_END` | −1 (izquierda, de frente) | De qué extremo del borde salen las colas. El otro: `--colas-derecha` (pasa los 635 controles) |
-| `TAIL_DISP`, `TAIL_DISP_W` | 47 / 12.5 mm | Centro y ancho de la cola de 24 pines |
-| `TAIL_TOUCH`, `TAIL_TOUCH_W` | **20** / 3.5 mm | Centro y ancho de la cola táctil. **El 20 es un supuesto:** el dibujo solo dice "más cerca del mismo extremo". Cada cola tiene 4 mm de aire por lado |
-| `PT` | 2.13 mm | Espesor del panel con táctil |
-| `DRIVER`, `DRV_FPC_OFF` | 30.2 × 65 × 5 mm, 0 | El driver y dónde tiene su conector FPC. **Se supone en un lado corto**; si está en uno largo, el driver va acostado y hay que mover el adaptador |
-| `TOUCH_AD`, `J6_ADAPTER` | 15 × 12 × 3 y 12 × 15 × 3 mm | Los adaptadores de 6 pines que se compren |
-| `WIRE_D`, `NIP_ID` | 0.8 / 6.5 mm | El hilo con aislante y el paso interior del niple |
-| `LENTE`, `LENS_T`, `GASKET`, `FOAM` | con lente, 1 / 0.5 / 1.5 mm | El táctil a través del lente. Las espumas que se consigan |
-| `SLIDE_BODY`, `SLIDE_TOP`, `SLIDE_LEVER`, `SLIDE_TRAVEL` | 3.5 / 9.5 / 2 / 2 mm | El SS12D00G6 real: alto, palanca y recorrido. En el STEP es una caja maciza |
-| `TALK_STOP` | 0.5 mm | Que SW1 haga clic antes de que los pies toquen la placa |
-| Puerto de MK1 y MK2 | origen de la huella | El cuerpo del micrófono en el STEP está 0.26 mm corrido del origen; el tubo tolera 0.5 |
-| Cinta de J6 | 50 mm, lado de contactos sin confirmar | J6 es de contacto inferior; la cinta llega al adaptador dada vuelta |
+| `TAIL_END` | −1 (left, seen from the front) | Which end of the edge the flex tails come out of. The other one: `--colas-derecha` (passes the 635 checks) |
+| `TAIL_DISP`, `TAIL_DISP_W` | 47 / 12.5 mm | Center and width of the 24-pin flex tail |
+| `TAIL_TOUCH`, `TAIL_TOUCH_W` | **20** / 3.5 mm | Center and width of the touch flex tail. **The 20 is an assumption:** the drawing only says "closer to the same end". Each flex tail has 4 mm of air per side |
+| `PT` | 2.13 mm | Thickness of the panel with touch |
+| `DRIVER`, `DRV_FPC_OFF` | 30.2 × 65 × 5 mm, 0 | The driver and where its FPC connector is. **It is assumed to be on a short side**; if it is on a long one, the driver lies flat and the adapter has to move |
+| `TOUCH_AD`, `J6_ADAPTER` | 15 × 12 × 3 and 12 × 15 × 3 mm | The 6-pin adapters you buy |
+| `WIRE_D`, `NIP_ID` | 0.8 / 6.5 mm | The wire with insulation and the nipple bore |
+| `LENTE`, `LENS_T`, `GASKET`, `FOAM` | with lens, 1 / 0.5 / 1.5 mm | Touch through the lens. The foams you can get |
+| `SLIDE_BODY`, `SLIDE_TOP`, `SLIDE_LEVER`, `SLIDE_TRAVEL` | 3.5 / 9.5 / 2 / 2 mm | The real SS12D00G6: height, lever and travel. In the STEP it is a solid box |
+| `TALK_STOP` | 0.5 mm | That SW1 clicks before the feet touch the board |
+| MK1 and MK2 port | footprint origin | The microphone body in the STEP is offset 0.26 mm from the origin; the tube tolerates 0.5 |
+| J6 ribbon | 50 mm, contact side unconfirmed | J6 is bottom-contact; the ribbon reaches the adapter flipped over |
 
-Los de la v1 que siguen valiendo: `AA_TOP`, `NIP_D`, `NIP_TAP`, `NUT_R`, `GAP_C`, `BUMP_REC`, `SPK_D`, `SPK_T`, `BATT`, `LASTRE`, `MASS`.
+The v1 ones that still apply: `AA_TOP`, `NIP_D`, `NIP_TAP`, `NUT_R`, `GAP_C`, `BUMP_REC`, `SPK_D`, `SPK_T`, `BATT`, `LASTRE`, `MASS`.
 
-## Controles
+## Checks
 
-`dock.py` no exporta si falla alguno de sus **635 controles** (617 con `--sin-lente`):
-- **placa real (STEP):** SW1, el cuerpo de SW6 y de SW2, los 4 LEDs, los 2 micrófonos y J6 están donde la carcasa los espera; en el lugar de SW3, SW4 y SW5 no queda ningún pulsador;
-- **tecla ●:** SW1 queda bajo la tecla; en reposo está a 0.18 mm; hace el recorrido sin rozar; tope de arriba y tope de abajo; guía; tapa suficiente hasta D1, D2, MK2 y SW2;
-- **SW6 y SW2:** la palanca recorre sus 2 mm con 1 mm de aire por punta y 0.2 por lado, asoma 1 mm y queda bajo el marco cerrado; la ventana de D8 queda fuera del chaflán;
-- **panel:** de 2.13 mm, sujeto con la espuma apretada 15 %; el bisel lo pisa 3 mm o más por borde, con o sin lente;
-- **táctil:** las colas no se pisan; el adaptador cabe junto al driver; 14 hilos por el canal y por el niple; la cinta de J6 tiene lugar para la vuelta;
-- **cables:** ninguno pisa una pieza, la placa, la batería, el lastre, los parlantes, los adaptadores, el panel, el lente ni el driver;
-- **abierta, cerrada y a 20, 40, 60 y 80 % del giro:** interferencia 0 entre todas las piezas y contra el STEP de la placa;
-- **impresión:** cada pieza cabe en la cama en su orientación; paredes y holguras;
-- los de la v1 que siguen: antena, parlantes, placa del nombre, logo, estabilidad y forzado de las bisagras.
+`dock.py` does not export if any of its **635 checks** fails (617 with `--sin-lente`):
+- **real board (STEP):** SW1, the body of SW6 and of SW2, the 4 LEDs, the 2 microphones and J6 are where the enclosure expects them; no push button is left at the location of SW3, SW4 and SW5;
+- **● key:** SW1 is under the key; at rest it is 0.18 mm away; it completes its travel without rubbing; upper stop and lower stop; guide; enough cover up to D1, D2, MK2 and SW2;
+- **SW6 and SW2:** the lever covers its 2 mm of travel with 1 mm of air per end and 0.2 per side, protrudes 1 mm and stays under the closed frame; the D8 window is outside the chamfer;
+- **panel:** 2.13 mm, held with the foam compressed 15 %; the bezel overlaps it by 3 mm or more per edge, with or without lens;
+- **touch:** the flex tails do not overlap; the adapter fits next to the driver; 14 wires through the channel and through the nipple; the J6 ribbon has room for the turn;
+- **cables:** none intersects a part, the board, the battery, the ballast, the speakers, the adapters, the panel, the lens or the driver;
+- **open, closed and at 20, 40, 60 and 80 % of the swing:** 0 interference between all parts and against the board STEP;
+- **printing:** each part fits on the bed in its orientation; walls and clearances;
+- the v1 ones that still apply: antenna, speakers, name plate, logo, stability and forcing of the hinges.
 
-## Visor 3D
+## 3D viewer
 
-`dock.py --glb` escribe `capri-dock-v2.glb`: la base abierta, en metros, con una pieza por nodo (273 nodos; la placa va en `placa-0` … `placa-N`) y la misma línea `visor {…}` de cinemática que la v1. No está publicado en ningún lado.
-- **Nombres de nodo:** `A`, `B`, `C`, `E`, `F`, `H`, `N`, `letras`, `logo`, `panel`, `lente`, `driver`, `adaptador-tactil`, `adaptador-J5`, `adaptador-J6`, `cintas`, `haz-base`, `haz-cuello`, `cables-marco`, `otros-cables`, `palancas`, `bateria`, `lastre`, `parlantes`, `patas`, `topes`.
-- **Contra el GLB de la v1:** no existen `D` ni `G`; `nombre` pasó a `N`; los cables y parlantes se agrupan distinto. Un visor que busque los nombres de la v1 hay que ajustarlo.
-- Se comprobó que carga y se dibuja (trimesh y pyvista); no se probó en la página del visor.
+`dock.py --glb` writes `capri-dock-v2.glb`: the dock open, in meters, with one part per node (273 nodes; the board goes in `placa-0` … `placa-N`) and the same `visor {…}` kinematics line as v1. It is not published anywhere.
+- **Node names:** `A`, `B`, `C`, `E`, `F`, `H`, `N`, `letras`, `logo`, `panel`, `lente`, `driver`, `adaptador-tactil`, `adaptador-J5`, `adaptador-J6`, `cintas`, `haz-base`, `haz-cuello`, `cables-marco`, `otros-cables`, `palancas`, `bateria`, `lastre`, `parlantes`, `patas`, `topes`.
+- **Compared with the v1 GLB:** `D` and `G` do not exist; `nombre` became `N`; the cables and speakers are grouped differently. A viewer that looks for the v1 names has to be adjusted.
+- It was verified that it loads and renders (trimesh and pyvista); it was not tested on the viewer page.
 
-`printcheck.py` es un control aparte, sobre los STL: compara cada capa de 0.2 mm con la de abajo y no acepta voladizos, islas, puentes de más de 20 mm ni pendientes de más de 45° fuera de la zona de soporte declarada en `impresion.json`.
+`printcheck.py` is a separate check, on the STL files: it compares each 0.2 mm layer with the one below and does not accept overhangs, islands, bridges over 20 mm or slopes over 45° outside the support zone declared in `impresion.json`.
 
 ```sh
-# desde hardware/enclosure/
-uv run --python 3.12 --with build123d python -I dock.py                       # piezas y controles (~50 s)
-uv run --python 3.12 --with build123d python -I dock.py SALIDA --sin-lente    # sin lente (crear SALIDA antes)
+# from hardware/enclosure/
+uv run --python 3.12 --with build123d python -I dock.py                       # parts and checks (~50 s)
+uv run --python 3.12 --with build123d python -I dock.py SALIDA --sin-lente    # no lens (create SALIDA first)
 uv run --python 3.12 --with build123d python -I dock.py SALIDA --colas-derecha
 uv run --python 3.12 --with build123d python -I dock.py SALIDA --board=../board/OTRA.step
 uv run --python 3.12 --with build123d --with matplotlib python -I dock.py --cortes --escena=/tmp/escena --glb   # + capri-dock-v2.glb
-uv run --python 3.12 --with pyvista python -I render.py /tmp/escena           # vista.png, explosionada.png, controles.png
+uv run --python 3.12 --with pyvista python -I render.py /tmp/escena           # view.png, exploded.png, controls.png
 uv run --python 3.12 --with trimesh --with shapely --with numpy --with scipy --with networkx --with rtree python -I printcheck.py
-cp SALIDA/E-marco.st* SALIDA/F-tapa-marco.st* sin-lente/                      # después de correr --sin-lente: son las dos piezas que cambian
-python3 -I laminar.py                                                         # gcode en ~/Documents/Capricorn - impresión/ (borra los anteriores)
+cp SALIDA/E-marco.st* SALIDA/F-tapa-marco.st* sin-lente/                      # after running --sin-lente: these are the two parts that change
+python3 -I laminar.py                                                         # gcode in ~/Documents/Capricorn - impresión/ (deletes the previous ones)
 ```

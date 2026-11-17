@@ -2,7 +2,7 @@
 render.py — imágenes de capri-dock v2 a partir de la escena que deja `dock.py --escena=DIR`.
 
 Uso:  uv run --python 3.12 --with pyvista python -I render.py DIR [carpeta de salida]
-Escribe vista.png (armada, abierta), explosionada.png y controles.png (la tapa de la base de cerca, entera y cortada
+Escribe view.png (armada, abierta), exploded.png y controls.png (la tapa de la base de cerca, entera y cortada
 bajo la tapa para ver el collar de la tecla, SW1, las palancas y los LEDs).
 """
 import sys, json
@@ -37,7 +37,7 @@ pl = plotter((1500, 1300))
 for n in meshes:
     add(pl, n)
 pl.camera_position = [(430, -420, 330), (100, 70, 95), (0, 0, 1)]
-pl.screenshot(OUT / "vista.png")
+pl.screenshot(OUT / "view.png")
 
 # 2. Explosionada, de frente y de atrás: la base se abre en vertical y el marco a lo largo de su eje
 VERT = {"base": 75, "tecla": 125, "placa": 22, "interior": 0, "fondo": -60, "patas": -85, "nombre": 0, "cuello": 75}
@@ -58,7 +58,7 @@ for col, cam in ((0, [(760, -700, 520), (100, 50, 130), (0, 0, 1)]), (1, [(-500,
     pl.add_text("de frente: marco E, lente, panel, driver y adaptador, tapa F; tecla H, base A, placa, interior, fondo B" if col == 0 else
                 "de atrás: el haz de 14 hilos sube por el cuello y se abre hacia el driver (azul) y el adaptador del táctil (magenta)", font_size=11, color="black")
     pl.camera_position = cam
-pl.screenshot(OUT / "explosionada.png")
+pl.screenshot(OUT / "exploded.png")
 
 # 3. Controles: la esquina derecha de la tapa, entera y cortada 2.6 mm bajo la cara de arriba
 tx, ty = man["tecla"]
@@ -74,5 +74,5 @@ for col, cut in ((0, False), (1, True)):
     pl.add_text("tapa entera: tecla ● sobre SW1, ranura de SW2 (encendido), ranura de SW6 (silencio) y ventana de D8" if not cut else
                 "cortada bajo la tapa: collar y orejas de la tecla, pies, palancas, tubos de luz y de micrófono", font_size=10, color="black")
     pl.camera_position = [(tx + 60, -75, H + 170), (tx - 16, 62, H - 4), (0, 0, 1)]
-pl.screenshot(OUT / "controles.png")
-print("vista.png, explosionada.png, controles.png")
+pl.screenshot(OUT / "controls.png")
+print("view.png, exploded.png, controls.png")

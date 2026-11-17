@@ -1,17 +1,17 @@
 # Capricorn Hardware
 
 <p>
-  <a href="https://github.com/aule-org/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Capricorn hardware"></a>
-  <a href="https://github.com/aule-org/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Capricorn firmware"></a>
-  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Server-capricorn--sw-d97706.svg" alt="Capricorn server"></a>
-  <a href="https://github.com/aule-org/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="Capricorn app"></a>
+  <a href="https://github.com/meet-aule/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Capricorn hardware"></a>
+  <a href="https://github.com/meet-aule/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Capricorn firmware"></a>
+  <a href="https://github.com/meet-aule/capricorn-sw"><img src="https://img.shields.io/badge/Server-capricorn--sw-d97706.svg" alt="Capricorn server"></a>
+  <a href="https://github.com/meet-aule/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="Capricorn app"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
 
 (English | [Español](README.es.md))
 
 <p align="center">
-  <img src="hardware/enclosure/vista.png" alt="Capricorn on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
+  <img src="hardware/enclosure/view.png" alt="Capricorn on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
 </p>
 
 **Capricorn is the open-source AI tutor.** A calm, dedicated device for children: an e-ink page, a voice that listens, and a tutor that knows what the child already understands and what comes next. No feed, no ads, no glowing screen.
@@ -31,9 +31,13 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 - [Ordering guide: checking the placement preview](hardware/ordering/README.md)
 - [Desk dock: STL, STEP and source](hardware/enclosure/README.md)
 - [Firmware pin map](software/README.md)
-- [Firmware](https://github.com/aule-org/capricorn-fw) · [Server](https://github.com/aule-org/capricorn-sw) · [Family app](https://github.com/aule-org/capricorn-app)
+- [Firmware](https://github.com/meet-aule/capricorn-fw) · [Server](https://github.com/meet-aule/capricorn-sw) · [Family app](https://github.com/meet-aule/capricorn-app)
 
 ## The device
+
+<p align="center">
+  <img src="hardware/board/board.png" alt="Render of the Capricorn v0.2.2 board: ESP32-S3 module in the middle, e-ink and touch connectors on the left, USB-C and speaker connectors on the right" width="640">
+</p>
 
 | | Prototype v0.2.2 |
 |---|---|
@@ -51,7 +55,7 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 ## Inside
 
 <p align="center">
-  <img src="hardware/enclosure/explosionada.png" alt="Exploded view of the dock: frame, lens, panel, driver, base, board, battery, ballast and speakers" width="760">
+  <img src="hardware/enclosure/exploded.png" alt="Exploded view of the dock: frame, lens, panel, driver, base, board, battery, ballast and speakers" width="760">
 </p>
 
 ## Repository layout

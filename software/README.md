@@ -1,6 +1,6 @@
 # Software
 
-The firmware for Capricorn lives in [aule-org/capricorn-fw](https://github.com/aule-org/capricorn-fw), a fork of [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) with a LiveKit transport.
+The firmware for Capricorn lives in [meet-aule/capricorn-fw](https://github.com/meet-aule/capricorn-fw), a fork of [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) with a LiveKit transport.
 
 This folder holds the contract between the board and the firmware: which pin does what.
 

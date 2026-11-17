@@ -17,7 +17,7 @@ Uso:  uv run --python 3.12 --with build123d python -I dock.py [out_dir]
       --sin-lente       sin el lente de policarbonato: el panel apoya en el bisel (cambian E y F)
       --colas-derecha   las colas del panel salen del otro extremo del borde (MEDIR en el panel real)
       --nombre=...      otro nombre en la placa N
-      --cortes          (con --with matplotlib) cortes.png
+      --cortes          (con --with matplotlib) sections.png
       --escena=DIR      deja en DIR las piezas armadas, para render.py
       --glb             capri-dock-v2.glb: abierta, una pieza por nodo, para un visor 3D
       --tiempos         cuánto tarda cada sección
@@ -111,7 +111,7 @@ FONT = Path("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf")
 def text2d(txt, size):
     return Text(txt, font_size=size, font_path=str(FONT)) if FONT.exists() else Text(txt, font_size=size)
 
-# Logo de Aule: el wordmark de aule-org/aule (landing/public/brand/aule-wordmark.svg), trazos de 14 con puntas
+# Logo de Aule: el wordmark de meet-aule/aule (landing/public/brand/aule-wordmark.svg), trazos de 14 con puntas
 # cuadradas y esquinas en inglete, más los dos puntos de la Ë. Coordenadas del SVG (y hacia abajo).
 AULE_STROKES = [[(0, 100), (26, 0), (38, 0), (64, 100)], [(15, 62), (49, 62)],          # A
                 [(84, 0), (84, 100), (136, 100), (136, 0)],                               # U
@@ -1175,5 +1175,5 @@ if "--cortes" in sys.argv:
         ax.set_aspect("equal"); ax.autoscale_view(); ax.set_title(title, fontsize=9); ax.tick_params(labelsize=7)
         if lim:
             ax.set_xlim(lim[0], lim[1]); ax.set_ylim(lim[2], lim[3])
-    fig.savefig(OUT / "cortes.png", dpi=110); print("cortes.png")
+    fig.savefig(OUT / "sections.png", dpi=110); print("sections.png")
 

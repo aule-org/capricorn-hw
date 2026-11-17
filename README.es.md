@@ -1,17 +1,17 @@
 # Capricorn Hardware
 
 <p>
-  <a href="https://github.com/aule-org/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Hardware de Capricorn"></a>
-  <a href="https://github.com/aule-org/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Firmware de Capricorn"></a>
-  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Servidor-capricorn--sw-d97706.svg" alt="Servidor de Capricorn"></a>
-  <a href="https://github.com/aule-org/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="App de Capricorn"></a>
+  <a href="https://github.com/meet-aule/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Hardware de Capricorn"></a>
+  <a href="https://github.com/meet-aule/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Firmware de Capricorn"></a>
+  <a href="https://github.com/meet-aule/capricorn-sw"><img src="https://img.shields.io/badge/Servidor-capricorn--sw-d97706.svg" alt="Servidor de Capricorn"></a>
+  <a href="https://github.com/meet-aule/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="App de Capricorn"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licencia-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
 
 ([English](README.md) | Español)
 
 <p align="center">
-  <img src="hardware/enclosure/vista.png" alt="Capricorn en su base de escritorio: una página de tinta electrónica de 7.5 pulgadas en un marco naranja sobre una base negra con el nombre del niño" width="520">
+  <img src="hardware/enclosure/view.png" alt="Capricorn en su base de escritorio: una página de tinta electrónica de 7.5 pulgadas en un marco naranja sobre una base negra con el nombre del niño" width="520">
 </p>
 
 **Capricorn es el tutor de IA de código abierto.** Un aparato tranquilo y dedicado para niños: una página de tinta electrónica, una voz que escucha y un tutor que sabe qué entiende ya el niño y qué le toca después. Sin feed, sin anuncios, sin una pantalla que brilla.
@@ -31,9 +31,13 @@ Este repositorio tiene el hardware: la placa, sus archivos de fabricación, la b
 - [Guía de pedido: cómo revisar la vista previa de colocación](hardware/ordering/README.md)
 - [Base de escritorio: STL, STEP y fuente](hardware/enclosure/README.md)
 - [Mapa de pines para el firmware](software/README.md)
-- [Firmware](https://github.com/aule-org/capricorn-fw) · [Servidor](https://github.com/aule-org/capricorn-sw) · [App para familias](https://github.com/aule-org/capricorn-app)
+- [Firmware](https://github.com/meet-aule/capricorn-fw) · [Servidor](https://github.com/meet-aule/capricorn-sw) · [App para familias](https://github.com/meet-aule/capricorn-app)
 
 ## El aparato
+
+<p align="center">
+  <img src="hardware/board/board.png" alt="Render de la placa Capricorn v0.2.2: módulo ESP32-S3 al centro, conectores de tinta electrónica y táctil a la izquierda, USB-C y parlantes a la derecha" width="640">
+</p>
 
 | | Prototipo v0.2.2 |
 |---|---|
@@ -51,7 +55,7 @@ Este repositorio tiene el hardware: la placa, sus archivos de fabricación, la b
 ## Por dentro
 
 <p align="center">
-  <img src="hardware/enclosure/explosionada.png" alt="Vista explosionada de la base: marco, lente, panel, driver, base, placa, batería, lastre y parlantes" width="760">
+  <img src="hardware/enclosure/exploded.png" alt="Vista explosionada de la base: marco, lente, panel, driver, base, placa, batería, lastre y parlantes" width="760">
 </p>
 
 ## Estructura del repositorio
