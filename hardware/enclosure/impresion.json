@@ -1,0 +1,42 @@
+{
+ "piezas": {
+  "A-base": {
+   "orientacion": "tapa sobre la cama",
+   "soporte": [
+    [
+     65.5,
+     2.0,
+     128.5,
+     77.83141640626773,
+     17.2,
+     17.8,
+     "piso del bolsillo del cuello"
+    ]
+   ]
+  },
+  "B-fondo": {
+   "orientacion": "plano, la cara de afuera sobre la cama",
+   "soporte": []
+  },
+  "C-cuello": {
+   "orientacion": "de costado, la cara izquierda sobre la cama",
+   "soporte": []
+  },
+  "E-marco": {
+   "orientacion": "cara del frente sobre la cama",
+   "soporte": []
+  },
+  "F-tapa-marco": {
+   "orientacion": "cara de atrás sobre la cama",
+   "soporte": []
+  },
+  "H-tecla-hablar": {
+   "orientacion": "cara de arriba sobre la cama",
+   "soporte": []
+  },
+  "N-placa-nombre": {
+   "orientacion": "boca arriba, la espalda sobre la cama",
+   "soporte": []
+  }
+ }
+}

@@ -1,0 +1,606 @@
+(kicad_symbol_lib
+  (version 20241209)
+  (generator "heypcb")
+  (generator_version "10.0")
+  (symbol "2N7002"
+  
+  				(property "Reference" "Q"
+  					(at 5.08 1.905 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  						(justify left)
+  					)
+  				)
+  				(property "Value" "2N7002"
+  					(at 5.08 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  						(justify left)
+  					)
+  				)
+  				(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+  					(at 5.08 -1.905 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  							(italic yes)
+  						)
+  						(justify left)
+  					)
+  				)
+  				(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  					(at 5.08 -3.81 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  						(justify left)
+  					)
+  				)
+  				(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "ki_keywords" "N-Channel Switching MOSFET"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "ki_fp_filters" "SOT?23*"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(embedded_fonts no)
+  				(symbol "2N7002_0_1"
+  					(polyline
+  						(pts
+  							(xy 0.254 1.905) (xy 0.254 -1.905)
+  						)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 0.254 0) (xy -2.54 0)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 0.762 2.286) (xy 0.762 1.27)
+  						)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 0.762 0.508) (xy 0.762 -0.508)
+  						)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 0.762 -1.27) (xy 0.762 -2.286)
+  						)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type outline)
+  						)
+  					)
+  					(circle
+  						(center 1.651 0)
+  						(radius 2.794)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 2.54 2.54) (xy 2.54 1.778)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(circle
+  						(center 2.54 1.778)
+  						(radius 0.254)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type outline)
+  						)
+  					)
+  					(circle
+  						(center 2.54 -1.778)
+  						(radius 0.254)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type outline)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 2.921 0.381) (xy 3.683 0.381)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  					(polyline
+  						(pts
+  							(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+  						)
+  						(stroke
+  							(width 0)
+  							(type default)
+  						)
+  						(fill
+  							(type none)
+  						)
+  					)
+  				)
+  				(symbol "2N7002_1_1"
+  					(pin input line
+  						(at -5.08 0 0)
+  						(length 2.54)
+  						(name "G"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "1"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  					(pin passive line
+  						(at 2.54 -5.08 90)
+  						(length 2.54)
+  						(name "S"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "2"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  					(pin passive line
+  						(at 2.54 5.08 270)
+  						(length 2.54)
+  						(name "D"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "3"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  			))
+  (symbol "PAM8302AASCR"
+  				(in_bom yes)
+  				(on_board yes)
+  				(property
+  					"Reference"
+  					"U"
+  					(id 0)
+  					(at 0 8.89 0)
+  					(effects (font (size 1.27 1.27) ) )
+  				)
+  				(property
+  					"Value"
+  					"PAM8302AASCR"
+  					(id 1)
+  					(at 0 -8.89 0)
+  					(effects (font (size 1.27 1.27) ) )
+  				)
+  				(property
+  					"Footprint"
+  					"HeyPCB_LCSC:MSOP-8_L3.0-W3.0-P0.65-LS5.0-BL"
+  					(id 2)
+  					(at 0 -11.43 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(property
+  					"Datasheet"
+  					"https://www.diodes.com/datasheet/download/PAM8302A.pdf"
+  					(id 3)
+  					(at 0 -13.97 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(property
+  					"Manufacturer"
+  					"Nsiway(纳芯威)"
+  					(id 4)
+  					(at 0 -16.51 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(property
+  					"MPN"
+  					"NS4150B"
+  					(id 5)
+  					(at 0 -19.05 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(property
+  					"LCSC Part"
+  					"C189961"
+  					(id 6)
+  					(at 0 -21.59 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(property
+  					"ki_keywords"
+  					"Audio Power OpAmps"
+  					(id 8)
+  					(at 0 -24.13 0)
+  					(effects (font (size 1.27 1.27) ) hide)
+  				)
+  				(symbol "PAM8302AASCR_0_1"
+  					(rectangle
+  						(start -12.70 6.35)
+  						(end 12.70 -6.35)
+  						(stroke (width 0) (type default))
+  						(fill (type background))
+  					)
+  					(circle
+  						(center -11.43 5.08)
+  						(radius 0.38)
+  						(stroke (width 0) (type default))
+  						(fill (type none))
+  					)
+  					(pin input line
+  						(at -15.24 3.81 0)
+  						(length 2.54)
+  						(name "~{SD}" (effects (font (size 1.27 1.27))))
+  						(number "1" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin no_connect line
+  						(at -15.24 1.27 0)
+  						(length 2.54)
+  						(name "NC" (effects (font (size 1.27 1.27))))
+  						(number "2" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin input line
+  						(at -15.24 -1.27 0)
+  						(length 2.54)
+  						(name "IN+" (effects (font (size 1.27 1.27))))
+  						(number "3" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin input line
+  						(at -15.24 -3.81 0)
+  						(length 2.54)
+  						(name "IN-" (effects (font (size 1.27 1.27))))
+  						(number "4" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin output line
+  						(at 15.24 -3.81 180)
+  						(length 2.54)
+  						(name "VO+" (effects (font (size 1.27 1.27))))
+  						(number "5" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin power_in line
+  						(at 15.24 -1.27 180)
+  						(length 2.54)
+  						(name "VDD" (effects (font (size 1.27 1.27))))
+  						(number "6" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin power_in line
+  						(at 15.24 1.27 180)
+  						(length 2.54)
+  						(name "GND" (effects (font (size 1.27 1.27))))
+  						(number "7" (effects (font (size 1.27 1.27))))
+  					)
+  					(pin output line
+  						(at 15.24 3.81 180)
+  						(length 2.54)
+  						(name "VO-" (effects (font (size 1.27 1.27))))
+  						(number "8" (effects (font (size 1.27 1.27))))
+  					)
+  				)
+  			)
+  (symbol "SS12D00G6"
+  				(exclude_from_sim no)
+  				(in_bom yes)
+  				(on_board yes)
+  				(in_pos_files yes)
+  				(duplicate_pin_numbers_are_jumpers no)
+  				(property "Reference" "SW"
+  					(at -5.08 7.62 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "Value" "SS12D00G6"
+  					(at 5.08 -5.08 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "Footprint" "HeyPCB_Curated:SW_Slide_SPDT_YIZHI_SS12D00G6_P2.50mm"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5923ab98ec7e6c728a419eb15265d4a6.pdf?productCode=C50377150"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "Description" "YIZHI SS12D00G6 slide switch: three 0.8 mm holes on 2.5 mm, pin 2 the common in the middle; body 8.5 x 3.5 mm centred on the pins' line"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "Manufacturer" "YIZHI"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "MPN" "SS12D00G6"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "LCSC Part" "C50377150"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(property "ki_keywords" "slide switch spdt toggle on off power switch through-hole ss12d00"
+  					(at 0 0 0)
+  					(show_name no)
+  					(do_not_autoplace no)
+  					(hide yes)
+  					(effects
+  						(font
+  							(size 1.27 1.27)
+  						)
+  					)
+  				)
+  				(symbol "SS12D00G6_0_1"
+  					(rectangle
+  						(start -5.08 5.08)
+  						(end 5.08 -2.54)
+  						(stroke
+  							(width 0.254)
+  							(type default)
+  						)
+  						(fill
+  							(type background)
+  						)
+  					)
+  				)
+  				(symbol "SS12D00G6_1_1"
+  					(pin passive line
+  						(at -7.62 2.54 0)
+  						(length 2.54)
+  						(name "A"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "1"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  					(pin passive line
+  						(at -7.62 0.00 0)
+  						(length 2.54)
+  						(name "B"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "3"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  					(pin passive line
+  						(at 7.62 2.54 180)
+  						(length 2.54)
+  						(name "COM"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  						(number "2"
+  							(effects
+  								(font
+  									(size 1.27 1.27)
+  								)
+  							)
+  						)
+  					)
+  				)
+  			)
+)

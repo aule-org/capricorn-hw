@@ -1,0 +1,618 @@
+{
+ "consulta": "API pública de JLCPCB selectSmtComponentList, 2026-11-12 (aprox. 08:05 UTC), sin reservar piezas",
+ "FH12A-6S-0.5SH": "0 resultados",
+ "piezas": [
+  {
+   "code": "C15195",
+   "model": "CL05B103KB5NNNC",
+   "brand": "Samsung Electro-Mechanics",
+   "stock": 4493139,
+   "library": "base",
+   "prices": [
+    [
+     1,
+     0.0037
+    ],
+    [
+     1000,
+     0.0028
+    ],
+    [
+     3000,
+     0.0023
+    ],
+    [
+     10000,
+     0.0021
+    ],
+    [
+     50000,
+     0.0018
+    ],
+    [
+     50200,
+     0.0018
+    ]
+   ],
+   "describe": "10nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+  },
+  {
+   "code": "C20060",
+   "model": "FFCCable 24P Spacing0.5mm Long20CM Same Side",
+   "brand": "LX",
+   "stock": 650,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0728
+    ],
+    [
+     100,
+     0.0571
+    ],
+    [
+     300,
+     0.0493
+    ],
+    [
+     1000,
+     0.0434
+    ],
+    [
+     5000,
+     0.0387
+    ],
+    [
+     10000,
+     0.0362
+    ],
+    [
+     20000,
+     0.0357
+    ],
+    [
+     40000,
+     0.0354
+    ]
+   ],
+   "describe": "0.3mm 0.5mm 20cm 24P Same Side P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C202112",
+   "model": "FH12-24S-0.5SH(55)",
+   "brand": "HRS(Hirose)",
+   "stock": 3320,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.5153
+    ],
+    [
+     10,
+     0.4646
+    ],
+    [
+     30,
+     0.4384
+    ],
+    [
+     100,
+     0.4139
+    ],
+    [
+     500,
+     0.3942
+    ],
+    [
+     1000,
+     0.3861
+    ]
+   ],
+   "describe": "-40℃~+85℃ 0.3mm 0.5mm 24P 2mm Bottom Contact Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+  },
+  {
+   "code": "C202118",
+   "model": "FH12-6S-0.5SH(55)",
+   "brand": "HRS(Hirose)",
+   "stock": 597,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.4083
+    ],
+    [
+     50,
+     0.3267
+    ],
+    [
+     150,
+     0.2918
+    ],
+    [
+     500,
+     0.2482
+    ],
+    [
+     2000,
+     0.2287
+    ],
+    [
+     4000,
+     0.2171
+    ]
+   ],
+   "describe": "-40℃~+85℃ 0.3mm 0.5mm 2mm 6P Bottom Contact Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+  },
+  {
+   "code": "C219181",
+   "model": "MCP65R41T-1202E/CHY",
+   "brand": "Microchip Tech",
+   "stock": 58,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.8898
+    ],
+    [
+     10,
+     0.7197
+    ],
+    [
+     30,
+     0.6347
+    ],
+    [
+     100,
+     0.5513
+    ],
+    [
+     500,
+     0.5006
+    ],
+    [
+     1000,
+     0.4744
+    ]
+   ],
+   "describe": "-40℃~+125℃ 0.85us 1 1.8V~5.5V 10uV/℃ 1pA 1pA 2.5uA 3.3mV 3mV 4us 70dB 7V Built-in hysteresis、Built-in reference source Push-pull Rail-to-rail input TTL、CMOS SOT-23-6 Comparators ROHS"
+  },
+  {
+   "code": "C24318",
+   "model": "FFCCable 24P Spacing0.5mm Long12CM Inverting",
+   "brand": "LX",
+   "stock": 47,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0614
+    ],
+    [
+     100,
+     0.049
+    ],
+    [
+     300,
+     0.0411
+    ],
+    [
+     1000,
+     0.0365
+    ],
+    [
+     5000,
+     0.0328
+    ],
+    [
+     10000,
+     0.0308
+    ]
+   ],
+   "describe": "0.3mm 0.5mm 12cm 24P Reverse P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C2859436",
+   "model": "KH-FFC-V0.5-24P-100MM",
+   "brand": "Shenzhen Kinghelm Elec",
+   "stock": 100,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.1983
+    ],
+    [
+     50,
+     0.1563
+    ],
+    [
+     200,
+     0.1358
+    ],
+    [
+     500,
+     0.1132
+    ],
+    [
+     2500,
+     0.1033
+    ],
+    [
+     5000,
+     0.0972
+    ]
+   ],
+   "describe": "0.3mm 0.5mm 10cm 24P Reverse P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C2886899",
+   "model": "TL3305AF160QG",
+   "brand": "E-Switch",
+   "stock": 137,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.3049
+    ],
+    [
+     50,
+     0.2425
+    ],
+    [
+     150,
+     0.2156
+    ],
+    [
+     500,
+     0.1821
+    ],
+    [
+     2000,
+     0.1672
+    ],
+    [
+     4000,
+     0.1582
+    ]
+   ],
+   "describe": "-20℃~+70℃ 1.6N 12V 3.8mm 4.5mm 4.5mm 500,000 Cycles 50mA Black Gull Wing Round Button SPST Surface Mount,Vertical Without Bracket SMD-4P,4.5x4.5mm Tactile Switches ROHS"
+  },
+  {
+   "code": "C307331",
+   "model": "CL05B104KB54PNC",
+   "brand": "Samsung Electro-Mechanics",
+   "stock": 20309914,
+   "library": "base",
+   "prices": [
+    [
+     1,
+     0.0086
+    ],
+    [
+     1000,
+     0.0063
+    ],
+    [
+     3000,
+     0.0054
+    ],
+    [
+     10000,
+     0.0046
+    ],
+    [
+     50000,
+     0.0044
+    ],
+    [
+     100000,
+     0.0042
+    ]
+   ],
+   "describe": "100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+  },
+  {
+   "code": "C36268",
+   "model": "FFCCable 24P Spacing0.5mm Long12CM Same Side",
+   "brand": "LX",
+   "stock": 645,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0606
+    ],
+    [
+     100,
+     0.048
+    ],
+    [
+     300,
+     0.0411
+    ],
+    [
+     1000,
+     0.0365
+    ],
+    [
+     5000,
+     0.0328
+    ],
+    [
+     10000,
+     0.0308
+    ]
+   ],
+   "describe": "0.3mm 0.5mm 12cm 24P Same Side P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C50377150",
+   "model": "SS12D00G6",
+   "brand": "YIZHI",
+   "stock": 276,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0156
+    ],
+    [
+     200,
+     0.0146
+    ],
+    [
+     4000,
+     0.0122
+    ],
+    [
+     20000,
+     0.0117
+    ]
+   ],
+   "describe": "-"
+  },
+  {
+   "code": "C506794",
+   "model": "FH12A-24S-0.5SH(55)",
+   "brand": "HRS(Hirose)",
+   "stock": 1605,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.826
+    ],
+    [
+     10,
+     0.6739
+    ],
+    [
+     30,
+     0.5987
+    ],
+    [
+     100,
+     0.5235
+    ],
+    [
+     500,
+     0.476
+    ],
+    [
+     1000,
+     0.4515
+    ]
+   ],
+   "describe": "-40℃~+85℃ 0.3mm 0.5mm 24P 2mm Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle Top Contact SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+  },
+  {
+   "code": "C5124687",
+   "model": "KH-FFC-A0.5-6P-120MM",
+   "brand": "Shenzhen Kinghelm Elec",
+   "stock": 90,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0769
+    ],
+    [
+     100,
+     0.0612
+    ],
+    [
+     300,
+     0.0514
+    ],
+    [
+     1000,
+     0.0455
+    ],
+    [
+     5000,
+     0.0409
+    ],
+    [
+     10000,
+     0.0385
+    ]
+   ],
+   "describe": "0.5mm 12cm 6P Same Side P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C5124722",
+   "model": "KH-FFC-V0.5-6P-150MM",
+   "brand": "Shenzhen Kinghelm Elec",
+   "stock": 59,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0809
+    ],
+    [
+     50,
+     0.0643
+    ],
+    [
+     200,
+     0.054
+    ],
+    [
+     500,
+     0.0478
+    ],
+    [
+     2500,
+     0.0429
+    ],
+    [
+     5000,
+     0.0405
+    ]
+   ],
+   "describe": "0.5mm 15cm 6P Reverse P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C52923",
+   "model": "CL05A105KA5NQNC",
+   "brand": "Samsung Electro-Mechanics",
+   "stock": 10692775,
+   "library": "base",
+   "prices": [
+    [
+     1,
+     0.0057
+    ],
+    [
+     1000,
+     0.0043
+    ],
+    [
+     3000,
+     0.0037
+    ],
+    [
+     10000,
+     0.0032
+    ],
+    [
+     50000,
+     0.003
+    ],
+    [
+     100000,
+     0.0029
+    ]
+   ],
+   "describe": "1uF 25V X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+  },
+  {
+   "code": "C53663",
+   "model": "SWPA6045S680MT",
+   "brand": "Sunlord",
+   "stock": 18883,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0898
+    ],
+    [
+     50,
+     0.0738
+    ],
+    [
+     150,
+     0.0658
+    ],
+    [
+     1500,
+     0.0575
+    ],
+    [
+     3000,
+     0.0526
+    ],
+    [
+     4500,
+     0.0503
+    ]
+   ],
+   "describe": "1.2A 1A 289mΩ 68uH ±20% SMD,6x6mm Power Inductors ROHS"
+  },
+  {
+   "code": "C61064",
+   "model": "FFCCable 6P Spacing0.5mm Long15CM Inverting",
+   "brand": "LX",
+   "stock": 1185,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0768
+    ],
+    [
+     100,
+     0.0611
+    ],
+    [
+     300,
+     0.0532
+    ],
+    [
+     1000,
+     0.0473
+    ],
+    [
+     5000,
+     0.0427
+    ],
+    [
+     10000,
+     0.0403
+    ]
+   ],
+   "describe": "0.58mm 0.5mm 15cm 6P Reverse P=0.5mm FFC Cable (Flexible Flat Cable) ROHS"
+  },
+  {
+   "code": "C79272",
+   "model": "SWPA6045S100MT",
+   "brand": "Sunlord",
+   "stock": 16779,
+   "library": "expand",
+   "prices": [
+    [
+     1,
+     0.0841
+    ],
+    [
+     100,
+     0.0689
+    ],
+    [
+     300,
+     0.0614
+    ],
+    [
+     1500,
+     0.0542
+    ],
+    [
+     4500,
+     0.0496
+    ],
+    [
+     10500,
+     0.0473
+    ]
+   ],
+   "describe": "10uH 2.45A 3.5A 48mΩ ±20% SMD,6x6mm Power Inductors ROHS"
+  }
+ ]
+}

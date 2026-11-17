@@ -1,0 +1,804 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T02:08:55",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "esp32-audio-module.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Serigrafía recortada por el borde de la placa (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segmento en Edge.Cuts",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 48.0
+                    },
+                    "uuid": "9eab8972-c6d4-4866-802f-9a138fa66c10"
+                },
+                {
+                    "description": "Segmento de J1 en F.Silkscreen",
+                    "pos": {
+                        "x": 28.3,
+                        "y": 46.81
+                    },
+                    "uuid": "83e94683-ce22-4602-8ac2-a91859dbbf71"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Serigrafía recortada por el borde de la placa (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segmento en Edge.Cuts",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 48.0
+                    },
+                    "uuid": "9eab8972-c6d4-4866-802f-9a138fa66c10"
+                },
+                {
+                    "description": "Segmento de J1 en F.Silkscreen",
+                    "pos": {
+                        "x": 37.7,
+                        "y": 46.81
+                    },
+                    "uuid": "48deb90d-8caa-4779-af55-2518ac45eefa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Serigrafía recortada por el borde de la placa (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segmento en Edge.Cuts",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 2.5
+                    },
+                    "uuid": "5f37bd18-5957-4e2f-b88d-0392914cc3df"
+                },
+                {
+                    "description": "Campo de referencia de C51",
+                    "pos": {
+                        "x": 66.488515,
+                        "y": 13.05
+                    },
+                    "uuid": "0a08bb84-2733-4961-ad4a-b8f0f823caff"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "La huella 'ESP32-S3-WROOM-1' no coincide con la copia en la biblioteca 'RF_Module'",
+            "items": [
+                {
+                    "description": "Huella U1",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 22.15
+                    },
+                    "uuid": "26acf42a-f478-474f-af60-c749eaf282a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "La huella 'Fiducial_1mm_Mask2mm' no coincide con la copia en la biblioteca 'Fiducial'",
+            "items": [
+                {
+                    "description": "Huella FID1",
+                    "pos": {
+                        "x": 24.0,
+                        "y": 43.0
+                    },
+                    "uuid": "3c98face-d209-43c7-9972-09b63015584f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "La huella 'VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias' no coincide con la copia en la biblioteca 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Huella U2",
+                    "pos": {
+                        "x": 54.5,
+                        "y": 36.5
+                    },
+                    "uuid": "4d604b52-18bd-427d-9af2-2407158d99a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "La huella 'Fiducial_1mm_Mask2mm' no coincide con la copia en la biblioteca 'Fiducial'",
+            "items": [
+                {
+                    "description": "Huella FID2",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 44.5
+                    },
+                    "uuid": "aab4b7d4-7e24-473a-8bec-927ce99baa50"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Campo de referencia de J2",
+                    "pos": {
+                        "x": 59.478515,
+                        "y": 43.655
+                    },
+                    "uuid": "0426a5b7-a98d-41df-92d2-3190990cda62"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 14.45,
+                        "y": 19.4
+                    },
+                    "uuid": "32c27b54-6b92-4149-9bf4-b856cb344332"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 14.45,
+                        "y": 19.95
+                    },
+                    "uuid": "585c9e32-c29e-461c-9e65-7f0c28b3d9bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 14.45,
+                        "y": 22.5
+                    },
+                    "uuid": "1dd4c498-5796-4a2e-8890-637d4887ad05"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 16.95,
+                        "y": 19.4
+                    },
+                    "uuid": "84b92e5e-5ff7-4c9b-802f-96c88d13985b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 17.55,
+                        "y": 19.4
+                    },
+                    "uuid": "fdab02ed-838d-400e-a0ed-fc75f3337883"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 17.55,
+                        "y": 21.95
+                    },
+                    "uuid": "907a9c99-9f3e-4795-80c3-58da936e4ff1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de U4 en F.Silkscreen",
+                    "pos": {
+                        "x": 17.55,
+                        "y": 22.5
+                    },
+                    "uuid": "f5e4964d-877e-453d-8498-e7dccc14e187"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Círculo de U7 en F.Silkscreen",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 32.805
+                    },
+                    "uuid": "1f804b8c-c6e6-4542-8480-db9b008c0c31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Campo de referencia de C44",
+                    "pos": {
+                        "x": 60.688515,
+                        "y": 14.65
+                    },
+                    "uuid": "71a6e9ce-865a-49c3-9586-fc8e92202e9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Campo de referencia de JP1",
+                    "pos": {
+                        "x": 10.1,
+                        "y": 37.35
+                    },
+                    "uuid": "3e5341c3-a497-40a1-9a79-8823468d7070"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK2 en F.Silkscreen",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 38.79
+                    },
+                    "uuid": "6b67941c-1d99-4b47-bea7-492a00c63349"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK2 en F.Silkscreen",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 38.95
+                    },
+                    "uuid": "97d1f2e1-223a-4ee7-a99c-9ba602eec13b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK2 en F.Silkscreen",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 38.79
+                    },
+                    "uuid": "718b4701-7a41-413d-8c02-94a55eb42a16"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Círculo de MK2 en F.Silkscreen",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 36.88
+                    },
+                    "uuid": "74b65764-26d9-4d12-99f2-01969d81d6ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Campo de referencia de C39",
+                    "pos": {
+                        "x": 62.166881,
+                        "y": 4.68
+                    },
+                    "uuid": "d63fa6c9-e258-452a-9ed1-3d5da7ef91f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Campo de referencia de C40",
+                    "pos": {
+                        "x": 62.4,
+                        "y": 15.716881
+                    },
+                    "uuid": "9c00e759-dedd-474c-9d26-fe8d2a20fc1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK1 en F.Silkscreen",
+                    "pos": {
+                        "x": 7.265,
+                        "y": 45.365
+                    },
+                    "uuid": "23c11e14-d1c3-49c0-b58f-ca2a5603d8a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK1 en F.Silkscreen",
+                    "pos": {
+                        "x": 7.265,
+                        "y": 45.525
+                    },
+                    "uuid": "4c5df862-fd28-4597-a09a-742b04e6ff6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segmento de MK1 en F.Silkscreen",
+                    "pos": {
+                        "x": 9.265,
+                        "y": 45.365
+                    },
+                    "uuid": "a9fdd676-bc02-47f7-97b2-0d30410955ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Círculo de MK1 en F.Silkscreen",
+                    "pos": {
+                        "x": 8.265,
+                        "y": 43.455
+                    },
+                    "uuid": "e3639fcc-9818-4d4f-9008-9a9b0e0280e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de Q3",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 37.3
+                    },
+                    "uuid": "9cd1c2f5-96fe-4cd4-a750-e04955fefc1c"
+                },
+                {
+                    "description": "Campo de referencia de C35",
+                    "pos": {
+                        "x": 12.293119,
+                        "y": 36.9
+                    },
+                    "uuid": "cfb3ca61-2150-4535-b4e2-b7fcc575def4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segmento de Q3 en F.Silkscreen",
+                    "pos": {
+                        "x": 11.24,
+                        "y": 37.94
+                    },
+                    "uuid": "88b34310-0238-4775-b55d-a5df505f4483"
+                },
+                {
+                    "description": "Campo de referencia de Q3",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 37.3
+                    },
+                    "uuid": "9cd1c2f5-96fe-4cd4-a750-e04955fefc1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.1441 mm)",
+            "items": [
+                {
+                    "description": "Segmento de Q3 en F.Silkscreen",
+                    "pos": {
+                        "x": 12.76,
+                        "y": 37.94
+                    },
+                    "uuid": "1e188c88-a504-4971-b575-88335711a3cb"
+                },
+                {
+                    "description": "Campo de referencia de Q3",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 37.3
+                    },
+                    "uuid": "9cd1c2f5-96fe-4cd4-a750-e04955fefc1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.1136 mm)",
+            "items": [
+                {
+                    "description": "Segmento de Q3 en F.Silkscreen",
+                    "pos": {
+                        "x": 11.24,
+                        "y": 37.99
+                    },
+                    "uuid": "1d639f09-b714-417e-9613-5fd0a59e78b5"
+                },
+                {
+                    "description": "Campo de referencia de Q3",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 37.3
+                    },
+                    "uuid": "9cd1c2f5-96fe-4cd4-a750-e04955fefc1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de J3",
+                    "pos": {
+                        "x": 43.288357,
+                        "y": 43.65
+                    },
+                    "uuid": "517b5034-3723-4d21-b976-b965a8fb830c"
+                },
+                {
+                    "description": "Campo de referencia de D4",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 43.8
+                    },
+                    "uuid": "f007d6cd-7cd0-4877-a6e3-0a17675b1bed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0237 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de FID2",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 46.778515
+                    },
+                    "uuid": "2b858042-c75f-4271-8113-8cf89a4527ed"
+                },
+                {
+                    "description": "Segmento de D4 en F.Silkscreen",
+                    "pos": {
+                        "x": 42.065,
+                        "y": 45.2
+                    },
+                    "uuid": "79ff4c99-50fd-43ea-921d-1a1601678d93"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.1394 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de FID2",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 46.778515
+                    },
+                    "uuid": "2b858042-c75f-4271-8113-8cf89a4527ed"
+                },
+                {
+                    "description": "Segmento de D4 en F.Silkscreen",
+                    "pos": {
+                        "x": 42.065,
+                        "y": 47.485
+                    },
+                    "uuid": "9f118fd8-59bb-4c37-8ab7-e431cfca6954"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0196 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de C44",
+                    "pos": {
+                        "x": 60.688515,
+                        "y": 14.65
+                    },
+                    "uuid": "71a6e9ce-865a-49c3-9586-fc8e92202e9e"
+                },
+                {
+                    "description": "Segmento de R24 en F.Silkscreen",
+                    "pos": {
+                        "x": 60.662742,
+                        "y": 15.8775
+                    },
+                    "uuid": "a3564fcf-e089-40b1-86b5-453559bc3d0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0224 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de R29",
+                    "pos": {
+                        "x": 64.3,
+                        "y": 18.8
+                    },
+                    "uuid": "93ecc926-3b7d-49ca-b6f5-2bcb41c18d69"
+                },
+                {
+                    "description": "Campo de referencia de R5",
+                    "pos": {
+                        "x": 63.260691,
+                        "y": 19.0
+                    },
+                    "uuid": "a81eb881-033d-4d31-a64d-6c8244d6546a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0718 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de C44",
+                    "pos": {
+                        "x": 60.688515,
+                        "y": 14.65
+                    },
+                    "uuid": "71a6e9ce-865a-49c3-9586-fc8e92202e9e"
+                },
+                {
+                    "description": "Segmento de C49 en F.Silkscreen",
+                    "pos": {
+                        "x": 60.91,
+                        "y": 12.942164
+                    },
+                    "uuid": "c0833c30-def5-48b2-af9b-20f7cec2be47"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de J2",
+                    "pos": {
+                        "x": 59.478515,
+                        "y": 43.655
+                    },
+                    "uuid": "0426a5b7-a98d-41df-92d2-3190990cda62"
+                },
+                {
+                    "description": "Segmento de Q6 en F.Silkscreen",
+                    "pos": {
+                        "x": 59.44,
+                        "y": 43.26
+                    },
+                    "uuid": "aabac0eb-a42d-4226-ad39-7610be0dd925"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Campo de referencia de J2",
+                    "pos": {
+                        "x": 59.478515,
+                        "y": 43.655
+                    },
+                    "uuid": "0426a5b7-a98d-41df-92d2-3190990cda62"
+                },
+                {
+                    "description": "Segmento de Q6 en F.Silkscreen",
+                    "pos": {
+                        "x": 59.44,
+                        "y": 43.26
+                    },
+                    "uuid": "b5ac9b83-a3b7-41ed-9d8c-6d7dd1a361d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.1309 mm)",
+            "items": [
+                {
+                    "description": "Segmento de R25 en F.Silkscreen",
+                    "pos": {
+                        "x": 63.22,
+                        "y": 4.453641
+                    },
+                    "uuid": "88e45c5b-dd49-4ee6-bcb4-be7fcd7de835"
+                },
+                {
+                    "description": "Campo de referencia de C39",
+                    "pos": {
+                        "x": 62.166881,
+                        "y": 4.68
+                    },
+                    "uuid": "d63fa6c9-e258-452a-9ed1-3d5da7ef91f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Margen de serigrafía (restricciones de configuración de placa para serigrafía margen 0.1500 mm; real 0.1137 mm)",
+            "items": [
+                {
+                    "description": "Texto de PCB 'capri-slate v0.2.2 2026-11' en B.Silkscreen",
+                    "pos": {
+                        "x": -13.0,
+                        "y": 19.0
+                    },
+                    "uuid": "58f45849-c315-47d1-9ad7-64c9d2ac3bbd"
+                },
+                {
+                    "description": "Texto de PCB 'EPD 24P: GDEY075T7 7.5in' en B.Silkscreen",
+                    "pos": {
+                        "x": -13.0,
+                        "y": 20.6
+                    },
+                    "uuid": "6359814f-2fe8-43a9-bf5d-5c887fefcce4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

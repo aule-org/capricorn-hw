@@ -1,0 +1,1210 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T02:08:56",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d0d95d46-f7fd-5396-9a50-8c67f831a838",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/d0d95d46-f7fd-5396-9a50-8c67f831a838/eea5573b-2282-5a88-9607-991e926c92e4",
+            "violations": [
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 1 [I/O1, No especificado, Línea]",
+                            "pos": {
+                                "x": 35.56,
+                                "y": 54.61
+                            },
+                            "uuid": "fcc01745-46c5-5277-a690-4616d30002b9"
+                        },
+                        {
+                            "description": "Symbol U5 Pin 6 [I/O1, No especificado, Línea]",
+                            "pos": {
+                                "x": 58.42,
+                                "y": 54.61
+                            },
+                            "uuid": "93fc8a83-b882-5c95-bfa9-5d26060c4dc5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 3 [I/O2, No especificado, Línea]",
+                            "pos": {
+                                "x": 35.56,
+                                "y": 59.69
+                            },
+                            "uuid": "78441472-433b-5420-ba90-9ee52e2920d6"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 14 [USB_D+, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 168.91,
+                                "y": 120.65
+                            },
+                            "uuid": "bd6727cc-d232-5943-a012-3b982d755274"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 6 [I/O1, No especificado, Línea]",
+                            "pos": {
+                                "x": 58.42,
+                                "y": 54.61
+                            },
+                            "uuid": "93fc8a83-b882-5c95-bfa9-5d26060c4dc5"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 13 [USB_D-, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 168.91,
+                                "y": 118.11
+                            },
+                            "uuid": "eb1aba26-e1a4-5829-88a0-9fea4e1698d7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 14 [TMR, No especificado, Línea]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 166.37
+                            },
+                            "uuid": "4ead8660-4054-55d4-9d17-812479389417"
+                        },
+                        {
+                            "description": "Symbol R31 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 303.53,
+                                "y": 166.37
+                            },
+                            "uuid": "790beac9-c42c-53c8-b029-ac5a5a06e9a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 12 [ILIM, No especificado, Línea]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 171.45
+                            },
+                            "uuid": "a4cd4408-ac76-5058-b65b-67473a0b87dc"
+                        },
+                        {
+                            "description": "Symbol R30 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 289.56,
+                                "y": 189.23
+                            },
+                            "uuid": "82730cae-df3c-5fda-950d-5086d7f1e5d3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 9 [#CHG, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 151.13
+                            },
+                            "uuid": "9a3daf07-f7a7-5a8a-b310-f60a09777fa1"
+                        },
+                        {
+                            "description": "Symbol D1 Pin 1 [K, Pasivo, Línea]",
+                            "pos": {
+                                "x": 387.35,
+                                "y": 151.13
+                            },
+                            "uuid": "e7e8e6d6-c6f0-5d66-8fc7-559ffb9a2eb8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 7 [#PGOOD, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 156.21
+                            },
+                            "uuid": "c9c3c8fe-5cc6-5b75-bf12-dcd66fe77789"
+                        },
+                        {
+                            "description": "Symbol D4 Pin 1 [K, Pasivo, Línea]",
+                            "pos": {
+                                "x": 387.35,
+                                "y": 156.21
+                            },
+                            "uuid": "a093dd12-aa3e-57a6-aaa9-18d630b1e17e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 6 [EN1, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 161.29
+                            },
+                            "uuid": "a97e5918-7709-54aa-ab02-830093c737fe"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 11 [OUT, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 146.05
+                            },
+                            "uuid": "0445a3ea-9cd7-5f98-b5d9-a1d80a61c253"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 5 [EN2, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 163.83
+                            },
+                            "uuid": "635e893e-b3a3-5c32-a6c1-234ba295d930"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 15 [SYSOFF, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 166.37
+                            },
+                            "uuid": "675374b7-540b-504f-8dbb-88dbafa2ae2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 15 [SYSOFF, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 166.37
+                            },
+                            "uuid": "675374b7-540b-504f-8dbb-88dbafa2ae2e"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 17 [EP, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 173.99
+                            },
+                            "uuid": "4e7e21d2-0f7f-5cc8-9a96-c4dcc7d25f09"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 4 [#CE, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 168.91
+                            },
+                            "uuid": "83983285-eda2-56e6-bbf0-145c188301a9"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 15 [SYSOFF, No especificado, Línea]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 166.37
+                            },
+                            "uuid": "675374b7-540b-504f-8dbb-88dbafa2ae2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Microcontroller and sensors/",
+            "uuid_path": "/d0d95d46-f7fd-5396-9a50-8c67f831a838/1017dd38-b739-509b-91c5-fd4defa7ad43",
+            "violations": [
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 1 [SCL/SPC, No especificado, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 54.61
+                            },
+                            "uuid": "83adacf3-ab7d-5b60-b917-69273d104c00"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 18 [IO10, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 138.43
+                            },
+                            "uuid": "cae8abb7-8aed-5b4b-8ff6-3e1050314bc8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 3 [SDO/SA0, No especificado, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 59.69
+                            },
+                            "uuid": "69e84720-c643-50df-9b4a-869c21b18b41"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 2 [CS, Entrada, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 57.15
+                            },
+                            "uuid": "084c66da-e29a-56d8-9d25-b5ef705c8bfa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 4 [SDA/SDI/SDO, No especificado, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 62.23
+                            },
+                            "uuid": "2547c8b3-dc02-5f4a-8888-1ed30faf40a2"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 19 [IO11, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 140.97
+                            },
+                            "uuid": "446e55da-8e36-59ce-a722-6961e90f420b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 5 [RES, No especificado, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 64.77
+                            },
+                            "uuid": "66f02f95-3f50-5f07-9f36-0c360e04a51a"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 6 [GND, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 102.87,
+                                "y": 67.31
+                            },
+                            "uuid": "4fd57627-9a39-5d92-aa7c-1eecfe705b13"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 10 [VDD_IO, No especificado, Línea]",
+                            "pos": {
+                                "x": 153.67,
+                                "y": 59.69
+                            },
+                            "uuid": "8faa72d2-0378-5e8f-b349-532dcc68f0b7"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 9 [VDD, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 153.67,
+                                "y": 62.23
+                            },
+                            "uuid": "76c1ff1c-e471-5df1-89f6-635c1cdc61d1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Audio/",
+            "uuid_path": "/d0d95d46-f7fd-5396-9a50-8c67f831a838/a68c5f67-196a-5a93-a73b-3f67d0ce8a3a",
+            "violations": [
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 1 [CCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 26.67
+                            },
+                            "uuid": "b33ac696-d0ab-55e8-a647-4b7f2e1b8bc6"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 4 [CCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 137.16
+                            },
+                            "uuid": "7207c4ba-e535-5862-b2db-ce04853a7fa0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 2 [MCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 29.21
+                            },
+                            "uuid": "82ced645-da23-5baa-aa5b-f4c541fbd2d2"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 5 [MCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 139.7
+                            },
+                            "uuid": "695e47da-6be1-5dac-b77a-96d646b0eb03"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Salida de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 3 [PVDD, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 31.75
+                            },
+                            "uuid": "7d86c089-199c-582d-a074-21991330858e"
+                        },
+                        {
+                            "description": "Symbol #PWR129 Pin 1 [Salida de alimentación, Línea]",
+                            "pos": {
+                                "x": 200.66,
+                                "y": 31.75
+                            },
+                            "uuid": "a0d79382-ed1a-4955-9788-65cb7e43d775"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 6 [SCLK/DMIC_SCL, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 39.37
+                            },
+                            "uuid": "7e5ad1ad-ab1b-5f1f-b28f-5d56038cef1c"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 9 [SCLK, Entrada, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 149.86
+                            },
+                            "uuid": "c89432de-11af-5291-a9a5-9b0139d04eb5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 8 [LRCK, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 44.45
+                            },
+                            "uuid": "64d82533-7dbb-5917-a91a-ff73b4dd7664"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 10 [LRCK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 152.4
+                            },
+                            "uuid": "5e441c84-0750-5adc-bead-abd2e200c1dd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 9 [DSDIN, No especificado, Línea]",
+                            "pos": {
+                                "x": 203.2,
+                                "y": 46.99
+                            },
+                            "uuid": "ef77bae6-d002-5f37-90a6-79f044aa52e7"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 9 [IO16, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 153.67
+                            },
+                            "uuid": "c914e23c-1170-55fc-a9e5-c097f51e5205"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 19 [CDATA, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 29.21
+                            },
+                            "uuid": "f4060aa9-558c-5597-99d9-01d1794b41c8"
+                        },
+                        {
+                            "description": "Symbol R16 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 351.79,
+                                "y": 43.18
+                            },
+                            "uuid": "d67783ee-5ebb-560f-84fe-99bd9571cd0d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 16 [VMID, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 36.83
+                            },
+                            "uuid": "d4fa6ee9-fa82-56a9-b4c7-86f95ed4abb6"
+                        },
+                        {
+                            "description": "Symbol C20 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 306.07,
+                                "y": 33.02
+                            },
+                            "uuid": "cd2b18df-5cda-5305-8c60-841255f70a6f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 15 [ADCVREF, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 39.37
+                            },
+                            "uuid": "40bcbb91-e0ad-5920-9e3d-d707e910f558"
+                        },
+                        {
+                            "description": "Symbol C19 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 321.31,
+                                "y": 36.83
+                            },
+                            "uuid": "56b1ea3a-7c87-5555-a080-34fbf090c3d4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 14 [DACVREF, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 41.91
+                            },
+                            "uuid": "7c40417b-69e1-56cf-9490-49473a3ef077"
+                        },
+                        {
+                            "description": "Symbol C18 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 321.31,
+                                "y": 85.09
+                            },
+                            "uuid": "3ef02ba0-8422-568c-9d98-665d82871637"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 13 [OUTN, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 44.45
+                            },
+                            "uuid": "cff51e03-49bd-5a3d-8c15-7f9a835651af"
+                        },
+                        {
+                            "description": "Symbol C53 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 306.07,
+                                "y": 83.82
+                            },
+                            "uuid": "dbbf0f1a-49cf-55d1-953a-f0e746558f2a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 12 [OUTP, No especificado, Línea]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 46.99
+                            },
+                            "uuid": "74a29dd2-27d9-51f1-9d11-5f3f21ded1f3"
+                        },
+                        {
+                            "description": "Symbol C52 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 289.56,
+                                "y": 34.29
+                            },
+                            "uuid": "96a93d6b-ab4e-5ea5-aebf-bd1ec2277b47"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y No especificado están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 1 [AD0, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 129.54
+                            },
+                            "uuid": "4eeea6d9-c911-520d-81b9-6433ee6dbcce"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 2 [AD1, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 132.08
+                            },
+                            "uuid": "34b9be2c-e50c-544d-a489-04e0777bc363"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 2 [AD1, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 132.08
+                            },
+                            "uuid": "34b9be2c-e50c-544d-a489-04e0777bc363"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 8 [GNDD, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 147.32
+                            },
+                            "uuid": "9cf00c77-a068-5eb9-9e9d-586e10e180a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 3 [CDATA, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 134.62
+                            },
+                            "uuid": "63900140-5236-5bb6-878a-a701456d4621"
+                        },
+                        {
+                            "description": "Symbol R16 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 351.79,
+                                "y": 43.18
+                            },
+                            "uuid": "d67783ee-5ebb-560f-84fe-99bd9571cd0d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 4 [CCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 137.16
+                            },
+                            "uuid": "7207c4ba-e535-5862-b2db-ce04853a7fa0"
+                        },
+                        {
+                            "description": "Symbol R15 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 43.18
+                            },
+                            "uuid": "474a9ea6-1fba-5e1e-869f-93221e69913b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 5 [MCLK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 139.7
+                            },
+                            "uuid": "695e47da-6be1-5dac-b77a-96d646b0eb03"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 20 [IO12, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 143.51
+                            },
+                            "uuid": "ed8bbee5-0dd3-5d82-8020-d00f87f53f8f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 6 [VDDP, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 142.24
+                            },
+                            "uuid": "0db57135-d4ad-5f00-a45a-45df54c08885"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 7 [VDDD, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 144.78
+                            },
+                            "uuid": "aca536c1-3d2c-59a3-a6a7-73700bc78240"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 10 [LRCK, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 152.4
+                            },
+                            "uuid": "5e441c84-0750-5adc-bead-abd2e200c1dd"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 4 [IO4, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 123.19
+                            },
+                            "uuid": "c7f8068d-82ec-5ac5-a81c-a8bea740c7ee"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Bidireccional están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 11 [SDOUT1/TDMOUT, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 154.94
+                            },
+                            "uuid": "c8d41da9-e7f7-58f8-9fe2-2ec090d65b68"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 8 [IO15, Bidireccional, Línea]",
+                            "pos": {
+                                "x": 138.43,
+                                "y": 151.13
+                            },
+                            "uuid": "4ddc456e-217e-54ef-b4ed-bd50772fb642"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 15 [MIC1N, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 165.1
+                            },
+                            "uuid": "5d2e3e8c-a22d-5c8a-9dd6-110fa445dd27"
+                        },
+                        {
+                            "description": "Symbol C22 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 354.33,
+                                "y": 233.68
+                            },
+                            "uuid": "021d8daa-2abc-5e11-a964-9eac3badcff8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 16 [MIC1P, No especificado, Línea]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 167.64
+                            },
+                            "uuid": "58a1d50d-1cbd-50c9-afbc-41dca2b0cca2"
+                        },
+                        {
+                            "description": "Symbol C21 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 369.57,
+                                "y": 143.51
+                            },
+                            "uuid": "eae21422-4e2d-513f-b2ad-b22690fad7d4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 32 [MIC3N, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 129.54
+                            },
+                            "uuid": "298cc2b8-5e4c-5fb2-b266-fa55b6939504"
+                        },
+                        {
+                            "description": "Symbol R24 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 148.59
+                            },
+                            "uuid": "86e6e501-0688-55a8-926e-c5a9530d2609"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 31 [MIC3P, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 132.08
+                            },
+                            "uuid": "6e901aa0-41b2-589c-a181-ae31c2e58715"
+                        },
+                        {
+                            "description": "Symbol R25 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 187.96
+                            },
+                            "uuid": "1906a3e1-a503-5ef8-beff-8be4a16120f2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 30 [REFQ34, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 134.62
+                            },
+                            "uuid": "f33ac072-b2b2-5e1d-a794-5aa41762509e"
+                        },
+                        {
+                            "description": "Symbol C47 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 419.1,
+                                "y": 189.23
+                            },
+                            "uuid": "4d893688-6a38-592f-ba28-efb329c942c9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 29 [REFP34, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 137.16
+                            },
+                            "uuid": "2a7757b2-c9dc-5e20-8f4e-45873e33899b"
+                        },
+                        {
+                            "description": "Symbol C46 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 337.82,
+                                "y": 238.76
+                            },
+                            "uuid": "02a4b587-0a41-5eef-a56c-b4e7dc9f054d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 26 [MICBIAS34, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 144.78
+                            },
+                            "uuid": "61dd44d7-4f69-525c-8193-2a75f3838a76"
+                        },
+                        {
+                            "description": "Symbol C54 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 387.35,
+                                "y": 138.43
+                            },
+                            "uuid": "df7df058-29de-54e5-9567-2e1e6eff78de"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 25 [REFQM, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 147.32
+                            },
+                            "uuid": "20f8fe08-4fd0-5118-bdd9-aa4584683e5e"
+                        },
+                        {
+                            "description": "Symbol C45 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 403.86,
+                                "y": 137.16
+                            },
+                            "uuid": "4295c864-fa87-5dc1-8fdb-20519902a450"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 24 [MICBIAS12, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 149.86
+                            },
+                            "uuid": "99586d32-bc72-5d5b-8c42-30c23288f1d1"
+                        },
+                        {
+                            "description": "Symbol C51 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 73.66,
+                                "y": 177.8
+                            },
+                            "uuid": "5686863d-ac13-55b8-9793-cb7abde5cb44"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Entrada de alimentación están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 23 [VDDM, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 152.4
+                            },
+                            "uuid": "dfafc9d5-b16c-5fb6-9c4b-96e6d252a983"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 22 [VDDA, Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 154.94
+                            },
+                            "uuid": "885b400b-e3d2-5ce1-9c7d-80eb5412d547"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 20 [MIC2N, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 160.02
+                            },
+                            "uuid": "626db4c1-e1ca-5ed1-9161-0478c418c33e"
+                        },
+                        {
+                            "description": "Symbol C49 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 387.35,
+                                "y": 184.15
+                            },
+                            "uuid": "1742621f-548e-5153-8c81-c109f4cf268b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 19 [MIC2P, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 162.56
+                            },
+                            "uuid": "6d50d0c9-9869-5bf0-8b37-2b22ae7054a1"
+                        },
+                        {
+                            "description": "Symbol C48 Pin 2 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 403.86,
+                                "y": 194.31
+                            },
+                            "uuid": "4b998438-6087-55f9-a50a-40defa3782be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 18 [REFQ12, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 165.1
+                            },
+                            "uuid": "d454053b-cf28-552c-b61d-5100ea11a590"
+                        },
+                        {
+                            "description": "Symbol C44 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 419.1,
+                                "y": 138.43
+                            },
+                            "uuid": "1397225c-b6f9-5e77-ad09-c2831a779ce3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pines del tipo No especificado y Pasivo están conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 17 [REFP12, No especificado, Línea]",
+                            "pos": {
+                                "x": 307.34,
+                                "y": 167.64
+                            },
+                            "uuid": "0917118c-dea0-57dc-955c-779ae10cdb4f"
+                        },
+                        {
+                            "description": "Symbol C43 Pin 1 [Pasivo, Línea]",
+                            "pos": {
+                                "x": 354.33,
+                                "y": 138.43
+                            },
+                            "uuid": "6f7c8226-c8bd-5909-8c8f-9660ff1b2948"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Connectors/",
+            "uuid_path": "/d0d95d46-f7fd-5396-9a50-8c67f831a838/702ee458-8bb2-544a-925e-df35fdde3eb7",
+            "violations": []
+        }
+    ],
+    "source": "esp32-audio-module.kicad_sch"
+}

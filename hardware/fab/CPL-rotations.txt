@@ -1,0 +1,170 @@
+CPL rotation provenance
+=======================
+
+Mid X / Mid Y are millimetres from the board's bottom-left corner,
++Y up. Rotation is degrees CCW in the factory's frame: bottom-side parts
+are mirrored as (180 - rotation) first, then the turn or correction
+named on the part's line is added.
+
+A part whose LCSC number has its land in the parts library is fitted
+to that land, which is the factory's own: the board's pads are matched to
+the land's by pad number (a diode's, an LED's or a polarised
+capacitor's by which end is which, since the two libraries need not
+number them alike), and the quarter turn and the centre that put
+each pin on its own pad are written. Its Mid X / Mid Y is the land's
+origin. Every other part takes the per-family table.
+
+147 placements: 132 fitted to the factory's land, 0 corrected, 14 verified as needing none, 1 UNVERIFIED.
+
+Check the UNVERIFIED parts in the factory's placement preview before
+paying. Their angle is KiCad's, written unchanged because nothing has
+checked that footprint against the factory's tape-and-reel orientation.
+That is not a statement that no correction is needed.
+
+  C1        180.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C14663 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C11        90.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C14663 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C12         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C14663 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C13       180.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C14       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C15       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C16       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C17        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C18        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C19        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C2        180.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C15850 (C0805), filed from C117956's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C20       180.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C21         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C22       180.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C24        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C25        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C27       270.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C15850 (C0805), filed from C117956's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C28       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C29        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C1523 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C30        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C1523 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C31       270.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C16780 (C0805), filed from C117956's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C32       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C33       180.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C34        90.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C19702 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C35       180.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C16780 (C0805), filed from C117956's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C36       180.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C14663 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C37         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C14663 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C38        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C39        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C4          0.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C1779 (C0805): KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C40       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C41        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C42       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C43       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C44       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C45         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C46         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C47         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C48         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C49       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C5        180.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C15850 (C0805), filed from C117956's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C50       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C51       270.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C52         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C53         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C54         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C52923 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C55        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C15195 (C0402), filed from C880603's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C56         0.0  Capacitor_SMD:C_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  C57       270.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C96446 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C58         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C59        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C6         90.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C60       180.0  Capacitor_SMD:C_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  C61         0.0  Capacitor_SMD:C_0805_2012Metric - no correction needed (symmetric 2-terminal chip part)
+  C62        90.0  Capacitor_SMD:C_0805_2012Metric - fitted to the factory's land for C1779 (C0805): KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  C64         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C65         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C67         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C68         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C69         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C7          0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C70         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C71         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C72         0.0  Capacitor_SMD:C_0603_1608Metric - fitted to the factory's land for C15849 (C0603), filed from C77055's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  C73         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C75        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C76         0.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C15195 (C0402), filed from C880603's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C77        90.0  Capacitor_SMD:C_0402_1005Metric - fitted to the factory's land for C307331 (C0402): KiCad's rotation kept, 2 pads matched, rms 0.060 mm, centre on the footprint's origin
+  C78       270.0  Capacitor_SMD:C_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  D1        270.0  LED_SMD:LED_0603_1608Metric - fitted to the factory's land for C2286 (LED-SMD_L1.6-W0.8-R-RD): KiCad's rotation kept, 2 pads matched, rms 0.037 mm, centre on the footprint's origin; pads paired by polarity, not number: its land numbers the cathode 2, the board's footprint 1
+  D2          0.0  LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm - fitted to the factory's land for C52917434 (LED-SMD_4P-L2.2-W2.0-P1.00_WS2815C-2020-4P), filed from C55109522's conversion of the same land: KiCad's rotation kept, 4 pads matched, rms 0.050 mm, centre moved 0.005 mm to the land's origin
+  D4         90.0  LED_SMD:LED_0603_1608Metric - fitted to the factory's land for C12624 (LED0603-RD): KiCad's rotation kept, 2 pads matched, rms 0.037 mm, centre on the footprint's origin
+  D5          0.0  Diode_SMD:D_SOD-123 - fitted to the factory's land for C82046 (SOD-123_L2.7-W1.6-LS3.7-RD-1): KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  D6          0.0  Diode_SMD:D_SOD-123 - fitted to the factory's land for C82046 (SOD-123_L2.7-W1.6-LS3.7-RD-1): KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  D7          0.0  Diode_SMD:D_SOD-123 - fitted to the factory's land for C82046 (SOD-123_L2.7-W1.6-LS3.7-RD-1): KiCad's rotation kept, 2 pads matched, rms 0.050 mm, centre on the footprint's origin
+  D8          0.0  LED_SMD:LED_0603_1608Metric - fitted to the factory's land for C12624 (LED0603-RD): KiCad's rotation kept, 2 pads matched, rms 0.037 mm, centre on the footprint's origin
+  J1          0.0  Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12 - fitted to the factory's land for C165948 (USB-C_SMD-TYPE-C-31-M-12_1): KiCad's rotation kept, 8 pads matched, rms 0.000 mm, centre moved 1.575 mm to the land's origin
+  J2        180.0  Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal - fitted to the factory's land for C173752 (CONN-TH_S2B-PH-K-S-LF-SN): KiCad's 0.0 turned 180 degrees, 2 pads matched, rms 0.000 mm, centre moved 1.000 mm to the land's origin
+  J3        180.0  Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal - fitted to the factory's land for C173752 (CONN-TH_S2B-PH-K-S-LF-SN): KiCad's 0.0 turned 180 degrees, 2 pads matched, rms 0.000 mm, centre moved 1.000 mm to the land's origin
+  J5         90.0  Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal - fitted to the factory's land for C202112 (FPC-SMD_FH12-24S-0.5SH-55): KiCad's -90.0 turned 180 degrees, 24 pads matched, rms 0.000 mm, centre moved 0.260 mm to the land's origin
+  J6        180.0  Connector_FFC-FPC:Hirose_FH12-6S-0.5SH_1x06-1MP_P0.50mm_Horizontal - fitted to the factory's land for C202118 (FPC-SMD_FH12-6S-0.5SH-55): KiCad's 0.0 turned 180 degrees, 6 pads matched, rms 0.000 mm, centre moved 0.230 mm to the land's origin
+  L1          0.0  Inductor_SMD:L_1008_2520Metric - no correction needed (symmetric 2-terminal chip part)
+  L2          0.0  Inductor_SMD:L_Sunlord_SWPA6045S - fitted to the factory's land for C79272 (IND-SMD_L6.0-W6.0_SWPA6045S): KiCad's rotation kept, 2 pads matched, rms 0.350 mm, each pin at least 13.9 times nearer its own pad than any other, centre on the footprint's origin
+  MK1         0.0  HeyPCB_LCSC:MIC-SMD_4P-L2.8-W1.9-P1.84-TL - fitted to the factory's land for C481302 (MIC-SMD_4P-L2.8-W1.9-P1.84-TL), filed from C7587901's conversion of the same land: KiCad's rotation kept, 4 pads matched, rms 0.000 mm, centre on the footprint's origin
+  MK2         0.0  HeyPCB_LCSC:MIC-SMD_4P-L2.8-W1.9-P1.84-TL - fitted to the factory's land for C481302 (MIC-SMD_4P-L2.8-W1.9-P1.84-TL), filed from C7587901's conversion of the same land: KiCad's rotation kept, 4 pads matched, rms 0.000 mm, centre on the footprint's origin
+  Q1         90.0  HeyPCB_Verified:SOT95P237X102-3N - fitted to the factory's land for C10487 (SOT-23-3_L3.0-W1.7-P0.95-LS2.9-BR): KiCad's -90.0 turned 180 degrees, 3 pads matched, rms 0.165 mm, centre moved 0.058 mm to the land's origin
+  Q3        180.0  Package_TO_SOT_SMD:SOT-23 - fitted to the factory's land for C8545 (SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR), filed from C1852118's conversion of the same land: KiCad's 0.0 turned 180 degrees, 3 pads matched, rms 0.059 mm, centre moved 0.021 mm to the land's origin
+  Q4        270.0  Package_TO_SOT_SMD:SOT-23 - fitted to the factory's land for C8545 (SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR), filed from C1852118's conversion of the same land: KiCad's 90.0 turned 180 degrees, 3 pads matched, rms 0.059 mm, centre moved 0.021 mm to the land's origin
+  Q5        180.0  Package_TO_SOT_SMD:SOT-323_SC-70 - fitted to the factory's land for C469327 (SOT-323_L2.0-W1.3-P1.30-LS2.1-BR), filed from C78606's conversion of the same land: KiCad's 0.0 turned 180 degrees, 3 pads matched, rms 0.083 mm, centre moved 0.029 mm to the land's origin
+  Q6        270.0  HeyPCB_Verified:SOT95P237X102-3N - fitted to the factory's land for C10487 (SOT-23-3_L3.0-W1.7-P0.95-LS2.9-BR): KiCad's 90.0 turned 180 degrees, 3 pads matched, rms 0.165 mm, centre moved 0.058 mm to the land's origin
+  R1          0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25804 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R10         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R12        90.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C22984 (R0603): KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R13        90.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C22984 (R0603): KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R14       180.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R15       180.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C23162 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R16        90.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C23162 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R17       180.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  R18         0.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  R19         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R2          0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25905 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R20         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R21       180.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R22         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C23138 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R23         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C22967 (R0603): KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R24         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C22967 (R0603): KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R25        90.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25890 (R0402): KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R28         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R29        90.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C21190 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R3          0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25905 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R30         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25867 (R0402): KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R31       180.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C36871 (R0402): KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R32       270.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  R33       180.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R34       270.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R35        90.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25076 (R0402): KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R36        90.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  R37        90.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R38       270.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R39        90.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25804 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R4        180.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  R40         0.0  Resistor_SMD:R_0603_1608Metric - no correction needed (symmetric 2-terminal chip part)
+  R41         0.0  Resistor_SMD:R_0603_1608Metric - no correction needed (symmetric 2-terminal chip part)
+  R42         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25804 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R46         0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C4190 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R47        90.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C26083 (R0402): KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R48         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25741 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R49         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25900 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R5          0.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C21190 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R50         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25900 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R51         0.0  Resistor_SMD:R_0402_1005Metric - fitted to the factory's land for C25744 (R0402), filed from C705648's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.080 mm, centre on the footprint's origin
+  R8        180.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25804 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  R9        180.0  Resistor_SMD:R_0603_1608Metric - fitted to the factory's land for C25803 (R0603), filed from C99782's conversion of the same land: KiCad's rotation kept, 2 pads matched, rms 0.075 mm, centre on the footprint's origin
+  SW1        90.0  Button_Switch_SMD:SW_SPST_TL3305A - UNVERIFIED: KiCad rotation written as-is, verify in preview; not fitted to the factory's land for C2886899 (KEY-SMD_4P-L4.5-W4.5-P3.00-LS6.9): it shares 0 pad numbers with the board's footprint, too few to fix a turn
+  SW2        90.0  HeyPCB_Curated:SW_Slide_SPDT_YIZHI_SS12D00G6_P2.50mm - fitted to the factory's land for C50377150 (SW-TH_SS12D00G4): KiCad's rotation kept, 3 pads matched, rms 0.000 mm, centre moved 2.500 mm to the land's origin
+  SW6         0.0  HeyPCB_Curated:SW_Slide_SPDT_YIZHI_SS12D00G6_P2.50mm - fitted to the factory's land for C50377150 (SW-TH_SS12D00G4): KiCad's rotation kept, 3 pads matched, rms 0.000 mm, centre moved 2.500 mm to the land's origin
+  TH1        90.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  TH2         0.0  Resistor_SMD:R_0402_1005Metric - no correction needed (symmetric 2-terminal chip part)
+  U1          0.0  RF_Module:ESP32-S3-WROOM-1 - fitted to the factory's land for C2913202 (WIRELM-SMD_ESP32-S3-WROOM-1), filed from C2913201's conversion of the same land: KiCad's rotation kept, 40 pads matched, rms 0.010 mm, centre moved 3.625 mm to the land's origin
+  U10       270.0  Package_TO_SOT_SMD:SOT-23-6 - fitted to the factory's land for C219181 (SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL): KiCad's 0.0 turned 270 degrees, 6 pads matched, rms 0.013 mm, centre on the footprint's origin
+  U2          0.0  Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias - fitted to the factory's land for C15464 (QFN-16_L3.0-W3.0-P0.50-TL-EP1.7), filed from C15220's conversion of the same land: KiCad's rotation kept, 16 pads matched, rms 0.037 mm, centre on the footprint's origin
+  U4          0.0  HeyPCB_LCSC:WQFN-20_L3.0-W3.0-P0.40-BL-EP1.7 - fitted to the factory's land for C962342 (WQFN-20_L3.0-W3.0-P0.40-BL-EP1.7), filed from C43131250's conversion of the same land: KiCad's rotation kept, 21 pads matched, rms 0.000 mm, centre on the footprint's origin
+  U5        180.0  HeyPCB_LCSC:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL - fitted to the factory's land for C2687116 (SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL), filed from C181786's conversion of the same land: KiCad's rotation kept, 6 pads matched, rms 0.000 mm, centre on the footprint's origin
+  U6          0.0  HeyPCB_LCSC:MSOP-8_L3.0-W3.0-P0.65-LS5.0-BL - fitted to the factory's land for C113367 (MSOP-8_L3.0-W3.0-P0.65-LS5.0-BL), filed from C148036's conversion of the same land: KiCad's rotation kept, 8 pads matched, rms 0.000 mm, centre on the footprint's origin
+  U7          0.0  HeyPCB_LCSC:LGA-12_L2.0-W2.0-P0.50-BL - fitted to the factory's land for C110926 (LGA-12_L2.0-W2.0-P0.50-BL), filed from C437655's conversion of the same land: KiCad's rotation kept, 12 pads matched, rms 0.000 mm, centre on the footprint's origin
+  U8        270.0  Package_SON:Texas_DRC0010J_ThermalVias - fitted to the factory's land for C24966 (SON-10_L3.1-W3.1-P0.50-TL-EP): KiCad's rotation kept, 10 pads matched, rms 0.075 mm, centre moved 0.005 mm to the land's origin
+  U9        180.0  HeyPCB_LCSC:QFN-32_L4.0-W4.0-P0.40-BL-EP2.7 - fitted to the factory's land for C365743 (QFN-32_L4.0-W4.0-P0.40-BL-EP2.7), filed from C365735's conversion of the same land: KiCad's rotation kept, 33 pads matched, rms 0.000 mm, centre on the footprint's origin

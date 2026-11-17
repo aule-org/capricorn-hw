@@ -1,0 +1,10 @@
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+\#auto_saved_files\#
+# Enclosure scratch output
+__pycache__/
+*.gcode
+# OS
+.DS_Store
