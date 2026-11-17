@@ -9,7 +9,7 @@ Thank you for helping build an open AI tutor for children. Capricorn combines el
 - Improve documentation, diagrams and assembly notes, or translate them.
 - Propose equivalent parts, better sourcing or corrected prices for the [BOM](bom/README.md), especially from suppliers outside China.
 - Adapt the enclosure to other panels, printers or classrooms.
-- Contribute firmware in [aule-org/capricorn-sw](https://github.com/aule-org/capricorn-sw) and the family app in [aule-org/capricorn-app](https://github.com/aule-org/capricorn-app).
+- Contribute firmware in [aule-org/capricorn-fw](https://github.com/aule-org/capricorn-fw), the server in [aule-org/capricorn-sw](https://github.com/aule-org/capricorn-sw) and the family app in [aule-org/capricorn-app](https://github.com/aule-org/capricorn-app).
 
 ## Before you start
 

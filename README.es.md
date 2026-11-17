@@ -2,7 +2,8 @@
 
 <p>
   <a href="https://github.com/aule-org/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Hardware de Capricorn"></a>
-  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Software-capricorn--sw-2da44e.svg" alt="Software de Capricorn"></a>
+  <a href="https://github.com/aule-org/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Firmware de Capricorn"></a>
+  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Servidor-capricorn--sw-d97706.svg" alt="Servidor de Capricorn"></a>
   <a href="https://github.com/aule-org/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="App de Capricorn"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licencia-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
@@ -30,7 +31,7 @@ Este repositorio tiene el hardware: la placa, sus archivos de fabricación, la b
 - [Guía de pedido: cómo revisar la vista previa de colocación](hardware/ordering/README.md)
 - [Base de escritorio: STL, STEP y fuente](hardware/enclosure/README.md)
 - [Mapa de pines para el firmware](software/README.md)
-- [Firmware](https://github.com/aule-org/capricorn-sw) · [App para familias](https://github.com/aule-org/capricorn-app)
+- [Firmware](https://github.com/aule-org/capricorn-fw) · [Servidor](https://github.com/aule-org/capricorn-sw) · [App para familias](https://github.com/aule-org/capricorn-app)
 
 ## El aparato
 
@@ -70,10 +71,9 @@ software/   Mapa de pines para el firmware
 
 ```
 capricorn-hw   el aparato: placa, tinta electrónica, audio, carcasa   (este repositorio)
-capricorn-sw   firmware: xiaozhi-esp32 + transporte LiveKit (WebRTC)
+capricorn-fw   firmware: xiaozhi-esp32 + transporte LiveKit (WebRTC)
+capricorn-sw   servidor central: tutor de voz, aparatos, API para familias
 capricorn-app  la app para familias: configurar el aparato, ver el avance, privacidad
-     │
-     └── habla con un servicio de tutor por LiveKit (Aule tiene uno; puedes correr el tuyo)
 ```
 
 ## Principios

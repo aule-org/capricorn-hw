@@ -2,7 +2,8 @@
 
 <p>
   <a href="https://github.com/aule-org/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Capricorn hardware"></a>
-  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Software-capricorn--sw-2da44e.svg" alt="Capricorn software"></a>
+  <a href="https://github.com/aule-org/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Capricorn firmware"></a>
+  <a href="https://github.com/aule-org/capricorn-sw"><img src="https://img.shields.io/badge/Server-capricorn--sw-d97706.svg" alt="Capricorn server"></a>
   <a href="https://github.com/aule-org/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="Capricorn app"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
@@ -30,7 +31,7 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 - [Ordering guide: checking the placement preview](hardware/ordering/README.md)
 - [Desk dock: STL, STEP and source](hardware/enclosure/README.md)
 - [Firmware pin map](software/README.md)
-- [Firmware](https://github.com/aule-org/capricorn-sw) · [Family app](https://github.com/aule-org/capricorn-app)
+- [Firmware](https://github.com/aule-org/capricorn-fw) · [Server](https://github.com/aule-org/capricorn-sw) · [Family app](https://github.com/aule-org/capricorn-app)
 
 ## The device
 
@@ -70,10 +71,9 @@ software/   Pin map for the firmware
 
 ```
 capricorn-hw   the device: board, e-ink, audio, enclosure          (this repository)
-capricorn-sw   firmware: xiaozhi-esp32 + a LiveKit (WebRTC) transport
+capricorn-fw   firmware: xiaozhi-esp32 + a LiveKit (WebRTC) transport
+capricorn-sw   central server: voice tutor, devices, family API
 capricorn-app  the family app: set up the device, see progress, privacy controls
-     │
-     └── talks to a tutor service over LiveKit (Aule runs one; you can run your own)
 ```
 
 ## Principles
