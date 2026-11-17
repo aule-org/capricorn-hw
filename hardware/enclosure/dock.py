@@ -111,7 +111,7 @@ FONT = Path("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf")
 def text2d(txt, size):
     return Text(txt, font_size=size, font_path=str(FONT)) if FONT.exists() else Text(txt, font_size=size)
 
-# Logo de Aule: el wordmark de aule-org/aule (landing/public/brand/aule-wordmark.svg), trazos de 14 con puntas
+# Logo de Aule: el wordmark de meet-aule/aule (landing/public/brand/aule-wordmark.svg), trazos de 14 con puntas
 # cuadradas y esquinas en inglete, más los dos puntos de la Ë. Coordenadas del SVG (y hacia abajo).
 AULE_STROKES = [[(0, 100), (26, 0), (38, 0), (64, 100)], [(15, 62), (49, 62)],          # A
                 [(84, 0), (84, 100), (136, 100), (136, 0)],                               # U
