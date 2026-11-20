@@ -1,5 +1,5 @@
 ---
-title: "Capricorn - guide for checking the JLCPCB preview"
+title: "Aule - guide for checking the JLCPCB preview"
 subtitle: "capri-slate v0.2.2 touch board, 5 units. 2026-11-12"
 lang: en
 ---

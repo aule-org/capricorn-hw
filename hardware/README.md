@@ -1,6 +1,6 @@
 # Hardware
 
-Everything physical in Capricorn: the board, its fabrication package, its 3D model and the desk dock that holds the e-ink panel.
+Everything physical in Aule: the board, its fabrication package, its 3D model and the desk dock that holds the e-ink panel.
 
 > **Prototype v0.2.2.** The design passes its electrical and design-rule checks, but the first boards have not been brought up yet. Treat it as a reference, not a kit, until they are.
 

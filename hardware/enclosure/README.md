@@ -1,6 +1,6 @@
-# Capricorn: folding desk dock (capri-dock v2)
+# Aule: folding desk dock (capri-dock v2)
 
-This is the second version of the Capricorn desk dock, adapted to the touch board, currently the **capri-slate v0.2.2 touch** (same geometry as v0.2.1: only the value of L2 and the silkscreen text change), and to the **GDEY075T7-T01** panel (7.5", 800 × 480, GT911 capacitive touch), and set up to print in PETG on the Elegoo Centauri Carbon.
+This is the second version of the Aule desk dock, adapted to the touch board, currently the **capri-slate v0.2.2 touch** (same geometry as v0.2.1: only the value of L2 and the silkscreen text change), and to the **GDEY075T7-T01** panel (7.5", 800 × 480, GT911 capacitive touch), and set up to print in PETG on the Elegoo Centauri Carbon.
 The shape is the same (L-shaped neck, frame with the same outline as the base, hidden hinge), **with a thinner bezel**: base and frame measure 194 × 138.5 mm (previously 200 × 140), 36 mm tall. What v1 explains and did not change (folding, hinge hardware, childproofing) is still in its README.
 
 **Status (2026-11-12):** `dock.py` passes its 635 checks against `../board/capri-slate-v0.2.2-tactil.step`, which is its default board (617 with `--sin-lente` (no lens), 635 with `--colas-derecha` (flex tails on the right)). `printcheck.py` passes on all three. The 7 parts and the 2 no-lens alternatives are sliced.
@@ -242,5 +242,5 @@ uv run --python 3.12 --with build123d --with matplotlib python -I dock.py --cort
 uv run --python 3.12 --with pyvista python -I render.py /tmp/escena           # view.png, exploded.png, controls.png
 uv run --python 3.12 --with trimesh --with shapely --with numpy --with scipy --with networkx --with rtree python -I printcheck.py
 cp SALIDA/E-marco.st* SALIDA/F-tapa-marco.st* sin-lente/                      # after running --sin-lente: these are the two parts that change
-python3 -I laminar.py                                                         # gcode in ~/Documents/Capricorn - impresión/ (deletes the previous ones)
+python3 -I laminar.py                                                         # gcode in ~/Documents/Aule - impresión/ (deletes the previous ones)
 ```

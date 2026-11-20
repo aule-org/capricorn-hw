@@ -1,4 +1,4 @@
-// Capricorn, placa v0.2.2 (capri-slate v0.2.2 táctil): mapa de pines. La v0.2.2 solo cambia L2 respecto de la
+// Aule, placa v0.2.2 (capri-slate v0.2.2 táctil): mapa de pines. La v0.2.2 solo cambia L2 respecto de la
 // v0.2.1, así que los pines son los mismos. Lo que no está aquí está en capri-mini-config.h.
 //
 // capri-slate v0.2 táctil: capri-mini v1.7d + tinta electrónica + táctil capacitivo + interruptor de silencio del

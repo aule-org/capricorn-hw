@@ -1,22 +1,22 @@
-# Capricorn Hardware
+# Aule Hardware
 
 <p>
-  <a href="https://github.com/meet-aule/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Hardware de Capricorn"></a>
-  <a href="https://github.com/meet-aule/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Firmware de Capricorn"></a>
-  <a href="https://github.com/meet-aule/capricorn-sw"><img src="https://img.shields.io/badge/Servidor-capricorn--sw-d97706.svg" alt="Servidor de Capricorn"></a>
-  <a href="https://github.com/meet-aule/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="App de Capricorn"></a>
+  <a href="https://github.com/meet-aule/aule-hw"><img src="https://img.shields.io/badge/Hardware-Aule-1f6feb.svg" alt="Hardware de Aule"></a>
+  <a href="https://github.com/meet-aule/aule-fw"><img src="https://img.shields.io/badge/Firmware-aule--fw-2da44e.svg" alt="Firmware de Aule"></a>
+  <a href="https://github.com/meet-aule/aule-sw"><img src="https://img.shields.io/badge/Servidor-aule--sw-d97706.svg" alt="Servidor de Aule"></a>
+  <a href="https://github.com/meet-aule/aule-app"><img src="https://img.shields.io/badge/App-aule--app-8250df.svg" alt="App de Aule"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licencia-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
 
 ([English](README.md) | Español)
 
 <p align="center">
-  <img src="hardware/enclosure/view.png" alt="Capricorn en su base de escritorio: una página de tinta electrónica de 7.5 pulgadas en un marco naranja sobre una base negra con el nombre del niño" width="520">
+  <img src="hardware/enclosure/view.png" alt="Aule en su base de escritorio: una página de tinta electrónica de 7.5 pulgadas en un marco naranja sobre una base negra con el nombre del niño" width="520">
 </p>
 
-**Capricorn es el tutor de IA de código abierto.** Un aparato tranquilo y dedicado para niños: una página de tinta electrónica, una voz que escucha y un tutor que sabe qué entiende ya el niño y qué le toca después. Sin feed, sin anuncios, sin una pantalla que brilla.
+**Aule es el tutor de IA de código abierto.** Un aparato tranquilo y dedicado para niños: una página de tinta electrónica, una voz que escucha y un tutor que sabe qué entiende ya el niño y qué le toca después. Sin feed, sin anuncios, sin una pantalla que brilla.
 
-Todo niño merece un tutor paciente. Hoy los tutores de IA son apps cerradas que corren en aparatos hechos para otra cosa. Creemos que un tutor para niños debería ser lo contrario: algo que las familias y los colegios puedan revisar, reparar y mejorar. Por eso construimos Capricorn a la vista: hardware, firmware y app.
+Todo niño merece un tutor paciente. Hoy los tutores de IA son apps cerradas que corren en aparatos hechos para otra cosa. Creemos que un tutor para niños debería ser lo contrario: algo que las familias y los colegios puedan revisar, reparar y mejorar. Por eso construimos Aule a la vista: hardware, firmware y app.
 
 Este repositorio tiene el hardware: la placa, sus archivos de fabricación, la base de escritorio y la lista de materiales.
 
@@ -31,12 +31,12 @@ Este repositorio tiene el hardware: la placa, sus archivos de fabricación, la b
 - [Guía de pedido: cómo revisar la vista previa de colocación](hardware/ordering/README.md)
 - [Base de escritorio: STL, STEP y fuente](hardware/enclosure/README.md)
 - [Mapa de pines para el firmware](software/README.md)
-- [Firmware](https://github.com/meet-aule/capricorn-fw) · [Servidor](https://github.com/meet-aule/capricorn-sw) · [App para familias](https://github.com/meet-aule/capricorn-app)
+- [Firmware](https://github.com/meet-aule/aule-fw) · [Servidor](https://github.com/meet-aule/aule-sw) · [App para familias](https://github.com/meet-aule/aule-app)
 
 ## El aparato
 
 <p align="center">
-  <img src="hardware/board/board.png" alt="Render de la placa Capricorn v0.2.2: módulo ESP32-S3 al centro, conectores de tinta electrónica y táctil a la izquierda, USB-C y parlantes a la derecha" width="640">
+  <img src="hardware/board/board.png" alt="Render de la placa Aule v0.2.2: módulo ESP32-S3 al centro, conectores de tinta electrónica y táctil a la izquierda, USB-C y parlantes a la derecha" width="640">
 </p>
 
 | | Prototipo v0.2.2 |
@@ -74,10 +74,10 @@ software/   Mapa de pines para el firmware
 ## Cómo encajan las piezas
 
 ```
-capricorn-hw   el aparato: placa, tinta electrónica, audio, carcasa   (este repositorio)
-capricorn-fw   firmware: xiaozhi-esp32 + transporte LiveKit (WebRTC)
-capricorn-sw   servidor central: tutor de voz, aparatos, API para familias
-capricorn-app  la app para familias: configurar el aparato, ver el avance, privacidad
+aule-hw   el aparato: placa, tinta electrónica, audio, carcasa   (este repositorio)
+aule-fw   firmware: xiaozhi-esp32 + transporte LiveKit (WebRTC)
+aule-sw   servidor central: tutor de voz, aparatos, API para familias
+aule-app  la app para familias: configurar el aparato, ver el avance, privacidad
 ```
 
 ## Principios

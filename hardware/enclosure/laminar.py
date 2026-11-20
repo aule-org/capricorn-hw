@@ -3,7 +3,7 @@ laminar.py — lamina cada pieza de capri-dock v2 con ElegooSlicer desde la lín
 Carbon con boquilla de 0.4 y PETG, y deja un gcode por cama con su tiempo y sus gramos.
 
 Uso:  python3 -I laminar.py [carpeta de los STL] [carpeta de salida]
-      por omisión: esta carpeta y "~/Documents/Capricorn - impresión" (los gcode no van a git)
+      por omisión: esta carpeta y "~/Documents/Aule - impresión" (los gcode no van a git)
 
 Receta: los perfiles del sistema se aplanan (sin `inherits`, con `from: system` y sus `compatible_printers`) y se les
 cambia solo lo de abajo. PETG a 250 °C, cama a 70 °C y ventilador de pieza con tope en 25 %: así salió mejor el cubo de
@@ -18,7 +18,7 @@ from pathlib import Path
 APP = "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer"
 PROFILES = "/Applications/ElegooSlicer.app/Contents/Resources/profiles/Elegoo"
 SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).parent
-DST = Path(sys.argv[2]) if len(sys.argv) > 2 else Path.home() / "Documents" / "Capricorn - impresión"
+DST = Path(sys.argv[2]) if len(sys.argv) > 2 else Path.home() / "Documents" / "Aule - impresión"
 BED = "Textured PEI Plate"
 
 idx = {}
