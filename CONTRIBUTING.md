@@ -1,6 +1,6 @@
-# Contributing to Capricorn Hardware
+# Contributing to Aule Hardware
 
-Thank you for helping build an open AI tutor for children. Capricorn combines electronics, mechanical design, firmware and teaching, so clear contributions matter. Issues and pull requests are welcome in English or Spanish.
+Thank you for helping build an open AI tutor for children. Aule combines electronics, mechanical design, firmware and teaching, so clear contributions matter. Issues and pull requests are welcome in English or Spanish.
 
 ## Ways to contribute
 
@@ -9,7 +9,7 @@ Thank you for helping build an open AI tutor for children. Capricorn combines el
 - Improve documentation, diagrams and assembly notes, or translate them.
 - Propose equivalent parts, better sourcing or corrected prices for the [BOM](bom/README.md), especially from suppliers outside China.
 - Adapt the enclosure to other panels, printers or classrooms.
-- Contribute firmware in [meet-aule/capricorn-fw](https://github.com/meet-aule/capricorn-fw), the server in [meet-aule/capricorn-sw](https://github.com/meet-aule/capricorn-sw) and the family app in [meet-aule/capricorn-app](https://github.com/meet-aule/capricorn-app).
+- Contribute firmware in [meet-aule/aule-fw](https://github.com/meet-aule/aule-fw), the server in [meet-aule/aule-sw](https://github.com/meet-aule/aule-sw) and the family app in [meet-aule/aule-app](https://github.com/meet-aule/aule-app).
 
 ## Before you start
 
@@ -35,7 +35,7 @@ Small fixes can go straight to a pull request. For larger changes, open an issue
 
 ## Children's safety and privacy
 
-Capricorn is used by children. Changes must keep the physical microphone mute working in hardware, keep batteries protected (charger limits, thermal cut-off) and avoid small detachable parts. When in doubt, open an issue.
+Aule is used by children. Changes must keep the physical microphone mute working in hardware, keep batteries protected (charger limits, thermal cut-off) and avoid small detachable parts. When in doubt, open an issue.
 
 ## License
 

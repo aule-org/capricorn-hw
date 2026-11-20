@@ -1,6 +1,6 @@
 # Bill of Materials
 
-Everything needed to build one Capricorn: the assembled board, the e-ink panel and the desk dock.
+Everything needed to build one Aule: the assembled board, the e-ink panel and the desk dock.
 
 > **Prototype v0.2.2, not yet validated on the bench.** Do not order a batch until the first boards are brought up. Follow the repository for updates.
 

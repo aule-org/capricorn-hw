@@ -1,22 +1,22 @@
-# Capricorn Hardware
+# Aule Hardware
 
 <p>
-  <a href="https://github.com/meet-aule/capricorn-hw"><img src="https://img.shields.io/badge/Hardware-Capricorn-1f6feb.svg" alt="Capricorn hardware"></a>
-  <a href="https://github.com/meet-aule/capricorn-fw"><img src="https://img.shields.io/badge/Firmware-capricorn--fw-2da44e.svg" alt="Capricorn firmware"></a>
-  <a href="https://github.com/meet-aule/capricorn-sw"><img src="https://img.shields.io/badge/Server-capricorn--sw-d97706.svg" alt="Capricorn server"></a>
-  <a href="https://github.com/meet-aule/capricorn-app"><img src="https://img.shields.io/badge/App-capricorn--app-8250df.svg" alt="Capricorn app"></a>
+  <a href="https://github.com/meet-aule/aule-hw"><img src="https://img.shields.io/badge/Hardware-Aule-1f6feb.svg" alt="Aule hardware"></a>
+  <a href="https://github.com/meet-aule/aule-fw"><img src="https://img.shields.io/badge/Firmware-aule--fw-2da44e.svg" alt="Aule firmware"></a>
+  <a href="https://github.com/meet-aule/aule-sw"><img src="https://img.shields.io/badge/Server-aule--sw-d97706.svg" alt="Aule server"></a>
+  <a href="https://github.com/meet-aule/aule-app"><img src="https://img.shields.io/badge/App-aule--app-8250df.svg" alt="Aule app"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0"></a>
 </p>
 
 (English | [Español](README.es.md))
 
 <p align="center">
-  <img src="hardware/enclosure/view.png" alt="Capricorn on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
+  <img src="hardware/enclosure/view.png" alt="Aule on its desk dock: a 7.5-inch e-ink page in an orange frame on a black base with the child's name" width="520">
 </p>
 
-**Capricorn is the open-source AI tutor.** A calm, dedicated device for children: an e-ink page, a voice that listens, and a tutor that knows what the child already understands and what comes next. No feed, no ads, no glowing screen.
+**Aule is the open-source AI tutor.** A calm, dedicated device for children: an e-ink page, a voice that listens, and a tutor that knows what the child already understands and what comes next. No feed, no ads, no glowing screen.
 
-Every child deserves a patient tutor. Today, AI tutors are closed apps running on devices built for something else. We think a tutor for children should be the opposite: something families and schools can inspect, repair and improve. So we build Capricorn in the open: hardware, firmware and app.
+Every child deserves a patient tutor. Today, AI tutors are closed apps running on devices built for something else. We think a tutor for children should be the opposite: something families and schools can inspect, repair and improve. So we build Aule in the open: hardware, firmware and app.
 
 This repository holds the hardware: the board, its fabrication files, the desk dock and the bill of materials.
 
@@ -31,12 +31,12 @@ This repository holds the hardware: the board, its fabrication files, the desk d
 - [Ordering guide: checking the placement preview](hardware/ordering/README.md)
 - [Desk dock: STL, STEP and source](hardware/enclosure/README.md)
 - [Firmware pin map](software/README.md)
-- [Firmware](https://github.com/meet-aule/capricorn-fw) · [Server](https://github.com/meet-aule/capricorn-sw) · [Family app](https://github.com/meet-aule/capricorn-app)
+- [Firmware](https://github.com/meet-aule/aule-fw) · [Server](https://github.com/meet-aule/aule-sw) · [Family app](https://github.com/meet-aule/aule-app)
 
 ## The device
 
 <p align="center">
-  <img src="hardware/board/board.png" alt="Render of the Capricorn v0.2.2 board: ESP32-S3 module in the middle, e-ink and touch connectors on the left, USB-C and speaker connectors on the right" width="640">
+  <img src="hardware/board/board.png" alt="Render of the Aule v0.2.2 board: ESP32-S3 module in the middle, e-ink and touch connectors on the left, USB-C and speaker connectors on the right" width="640">
 </p>
 
 | | Prototype v0.2.2 |
@@ -74,10 +74,10 @@ software/   Pin map for the firmware
 ## How the pieces fit
 
 ```
-capricorn-hw   the device: board, e-ink, audio, enclosure          (this repository)
-capricorn-fw   firmware: xiaozhi-esp32 + a LiveKit (WebRTC) transport
-capricorn-sw   central server: voice tutor, devices, family API
-capricorn-app  the family app: set up the device, see progress, privacy controls
+aule-hw   the device: board, e-ink, audio, enclosure          (this repository)
+aule-fw   firmware: xiaozhi-esp32 + a LiveKit (WebRTC) transport
+aule-sw   central server: voice tutor, devices, family API
+aule-app  the family app: set up the device, see progress, privacy controls
 ```
 
 ## Principles
